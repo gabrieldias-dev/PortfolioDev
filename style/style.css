@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lora:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2955D9;
+}
+
+header {
+    width: 100%;
+    height: 10em;
+    padding: 2em; 
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+    font-size: 2rem;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    
+}
+
+.topo-apresentacao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    width: 60%;
+    padding: 2em 2em 2em 2em;
+    font-size: 2rem;
+}
+
+.info > p {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 10rem;
+    text-transform: uppercase;
+}
+
+.info img {
+    width: 4rem;
+    filter: invert();
+    
+}
+
+#info-container {
+    display: flex;
+    justify-content: end;
+    font-size: 1.6rem;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#info-resumo {
+    width: 60%;
+}
+
+.container-email {
+    margin-top: 1em;
+
+}
+
+#copiar-email {
+    display: block;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #041a4464;
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+}
+
+.click-copiar {
+    
+}

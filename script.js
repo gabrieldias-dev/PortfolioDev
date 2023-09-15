@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Copiar Palavra</title>
-</head>
-
-<body>
-    <span id="palavra" style="cursor: pointer; text-decoration: underline; color: blue;">Clique para Copiar</span>
-
-    <script>
-        // Obtém o elemento span pelo ID
-        var spanElement = document.getElementById("palavra");
+ // Obtém o elemento span pelo ID
+        var spanElement = document.getElementById("copiar-email");
 
         // Define a palavra que você deseja copiar
         var palavraParaCopiar = "Exemplo";
@@ -40,10 +29,6 @@
 
             // Define um atraso para restaurar o texto original
             setTimeout(function () {
-                spanElement.innerText = "Clique para Copiar";
+                spanElement.innerText = "Gabrieldias_02@hotmail.com";
             }, 1000); // Restaura o texto original após 1 segundo
         });
-    </script>
-</body>
-
-</html>
