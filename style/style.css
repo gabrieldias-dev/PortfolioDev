@@ -16,7 +16,8 @@ html {
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #2955D9;
+    background-color: #2a51c6; 
+    /* background-image: radial-gradient(#7997f8 5%, #295BF2, #2955D9); */
 }
 
 header {
@@ -47,12 +48,27 @@ a:hover {
     width: 100%;
     justify-content: center;
     align-items: center;
+    position: relative;
+    
 }
 
 .info {
     width: 60%;
     padding: 2em 2em 2em 2em;
     font-size: 2rem;
+}
+
+.fundo-animação {
+    position: absolute;
+    width: 220px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.453);
+    border-radius: 0 0 40% 40%;
+    left: 20rem;
+    bottom: 0;
+    z-index: -1;
+    
+
 }
 
 .info > p {
@@ -68,9 +84,10 @@ h1 {
 }
 
 .info img {
-    width: 4rem;
+    width: 4rem;     
+    background-color: rgba(255, 255, 0, 0.847);
+    border-radius: 10px;
     filter: invert();
-    
 }
 
 #info-container {
@@ -84,6 +101,10 @@ h1 {
 
 #info-resumo {
     width: 60%;
+}
+
+#info-resumo > p {
+    line-height: 2.2rem;
 }
 
 .container-email {
