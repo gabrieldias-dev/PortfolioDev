@@ -30,20 +30,22 @@
 
             // Define um atraso para restaurar o texto original
             setTimeout(function () {
-                spanElement.innerText = "Click para Copiar";
-            }, 2000); // Restaura o texto original após 1 segundo
+                spanElement.innerText = "Copiar E-mail";
+            }, 4000); // Restaura o texto original após 4 segundos
         });
 
+
+        // Mundaça de cor na Caixa de e-mail
        
-            let mudarcor = document.querySelector('#copiar-email')
+            let mudarcor = document.querySelector('.ende-email')
 
-            mudarcor.addEventListener("click", function(){
+            spanElement.addEventListener("click", function(){
 
-                document.body.mudarcor.style.backgroundColor = 'green'
+                mudarcor.style.backgroundColor = '#80e64595'
 
                 setTimeout(function () {
-                document.body.mudarcor.style.backgroundColor = 'blue';
-            }, 2000); // Restaura o texto original após 1 segundo
+                mudarcor.style.backgroundColor = '';
+            }, 500); // Restaurar cor original após 1s
 
             })
         

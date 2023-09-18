@@ -108,6 +108,9 @@ h1 {
 
 .container-email {
     margin-top: 1em;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
 
 }
 
@@ -126,11 +129,10 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-        cursor: pointer;
-        padding: 1rem;
-        background-color: #041a4426;
-        border-radius: 5px;
-        border: 1px solid rgb(255, 255, 255);
+    background-color: #041a4426;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.566);
+    transition: background-color .6s;
 
 }
 
