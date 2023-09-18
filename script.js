@@ -1,8 +1,8 @@
  // Obtém o elemento span pelo ID
-        var spanElement = document.getElementById("copiar-email");
+        let spanElement = document.getElementById("copiar-email");
 
         // Define a palavra que você deseja copiar
-        var palavraParaCopiar = "Exemplo";
+        let palavraParaCopiar = "gabrieldias_02@hotmail.com";
 
         // Adiciona um evento de clique ao elemento span
         spanElement.addEventListener("click", function () {
@@ -25,10 +25,25 @@
             document.body.removeChild(textArea);
 
             // Ação de feedback (opcional)
-            spanElement.innerText = "Palavra Copiada!";
+            spanElement.innerText = "E-mail Copiado!" 
+        
 
             // Define um atraso para restaurar o texto original
             setTimeout(function () {
-                spanElement.innerText = "Gabrieldias_02@hotmail.com";
-            }, 1000); // Restaura o texto original após 1 segundo
+                spanElement.innerText = "Click para Copiar";
+            }, 2000); // Restaura o texto original após 1 segundo
         });
+
+       
+            let mudarcor = document.querySelector('#copiar-email')
+
+            mudarcor.addEventListener("click", function(){
+
+                document.body.mudarcor.style.backgroundColor = 'green'
+
+                setTimeout(function () {
+                document.body.mudarcor.style.backgroundColor = 'blue';
+            }, 2000); // Restaura o texto original após 1 segundo
+
+            })
+        

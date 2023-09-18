@@ -85,7 +85,6 @@ h1 {
 
 .info img {
     width: 4rem;     
-    background-color: rgba(255, 255, 0, 0.847);
     border-radius: 10px;
     filter: invert();
 }
@@ -123,6 +122,15 @@ h1 {
     border-radius: 5px;
 }
 
-.click-copiar {
-    
+.ende-email {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+        cursor: pointer;
+        padding: 1rem;
+        background-color: #041a4426;
+        border-radius: 5px;
+        border: 1px solid rgb(255, 255, 255);
+
 }
+
