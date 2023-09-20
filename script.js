@@ -33,15 +33,13 @@
                 spanElement.innerText = "Copiar E-mail";
             }, 4000); // Restaura o texto original após 4 segundos
         });
-
-
+        
         // Mundaça de cor na Caixa de e-mail
-       
             let mudarcor = document.querySelector('.ende-email')
 
             spanElement.addEventListener("click", function(){
 
-                mudarcor.style.backgroundColor = '#80e64595'
+                mudarcor.style.backgroundColor = '#8CFF00a7'
 
                 setTimeout(function () {
                 mudarcor.style.backgroundColor = '';
