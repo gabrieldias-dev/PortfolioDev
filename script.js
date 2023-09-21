@@ -43,7 +43,9 @@
 
                 setTimeout(function () {
                 mudarcor.style.backgroundColor = '';
-            }, 500); // Restaurar cor original após 1s
+            }, 500); // Restaurar cor original após meio segundo
 
             })
+
+
         
