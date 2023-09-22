@@ -27,7 +27,6 @@
             // Ação de feedback (opcional)
             spanElement.innerText = "E-mail Copiado!" 
         
-
             // Define um atraso para restaurar o texto original
             setTimeout(function () {
                 spanElement.innerText = "Copiar E-mail";
