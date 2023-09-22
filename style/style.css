@@ -111,14 +111,14 @@ a {
 }
 
 .nav-menu:hover:before {
-    border-color: var(--Verde);
+    border-color: var(--Amarelo);
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .3s;
 }
 
 .nav-menu:hover:after {
-    border-color: var(--Verde);
+    border-color: var(--Amarelo);
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .5s;
@@ -181,11 +181,13 @@ h1 {
     width: 4rem;
     border-radius: 10px;
     filter: invert(1);
-    background-color: #d9d62974;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 255, 0.303)) invert(1);
+    transition: all 0.4s;
 }
 
 .icone-social:hover {
-    
+    transform: scale(1.2);
+
 }
 
 #info-container {
