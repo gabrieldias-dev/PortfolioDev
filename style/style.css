@@ -48,6 +48,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 header {
@@ -61,7 +62,7 @@ header {
     position: absolute;
     width: 50px;
     left: 2rem;
-    animation: rodar 20s linear infinite;
+     animation: rodar 20s linear infinite;
 
 }
 
@@ -122,6 +123,7 @@ a {
 
 .nav-menu:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .nav-menu:hover:before {
@@ -269,3 +271,8 @@ h1 {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.303);
 }
 
+.section-projetos {
+    width: 100%;
+    height: 100vh;
+
+}
