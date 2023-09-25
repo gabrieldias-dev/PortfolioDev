@@ -21,7 +21,7 @@
 @keyframes aviaoFlutuar {
     0% {transform:  translateY(0);}
     50% {transform: translateY(-25px);}
-    100% {transform: translateY(0x);}
+    100% {transform: translateY(0);}
 }
 
 @keyframes rodar {
@@ -30,9 +30,6 @@
     100% {transform: rotate(360deg); }
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
 
 @media (min-width: 1024px){
     
@@ -301,4 +298,8 @@ h1 {
     width: 100%;
     height: 100vh;
 
+}
+
+.scroll-1, .scroll-header {
+    visibility: hidden;
 }
