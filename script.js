@@ -4,10 +4,10 @@
     window.sr = ScrollReveal({reset:true});
 
     sr.reveal('.scroll-1', {
-        rotate: { x: 100, y:100, z:0 },
+        // rotate: { x: 100, y:0, z:0 },
         duration: 2000});
 
-    sr.reveal('.scroll-2', {delay: 500, duration: 3000});
+    sr.reveal('.scroll-2', {duration: 2000});
 
     sr.reveal('.scroll-header', {duration: 2000})
 
