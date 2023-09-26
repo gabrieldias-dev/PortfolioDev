@@ -67,11 +67,8 @@ body {
 
 main {
     max-width: 100vw;
-    min-height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    height: 100vh;
+    
 }
 
 header {
@@ -163,10 +160,20 @@ a {
     transition: .3s transform linear, .3s height linear .5s;
 }
 
+.container-1 {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
 
 .topo-apresentacao {
     display: flex;
     width: 1200px;
+    height: 490px;
     align-items: center;
     justify-content: center;
     align-items: center;
