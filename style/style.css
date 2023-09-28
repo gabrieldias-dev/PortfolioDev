@@ -61,14 +61,13 @@ body {
     min-height: 100vh;
     /* background-color: #2a51c6;  */
     /* background-image: linear-gradient(110deg, #57F29A 10%, #2955D9, #2955D9); */
-    background-image: linear-gradient(110deg, #F2BA52 10%, #2955D9, #2955D9); 
-    background-repeat: no-repeat;  
+    background-image: linear-gradient(110deg, #F2BA52 10%, #2955D9, #2955D9);
+     
 } 
 
 main {
     max-width: 100vw;
-    height: 100vh;
-    
+    /* height: 100vh;  */
 }
 
 header {
@@ -307,4 +306,9 @@ h1 {
 
 .scroll-1, .scroll-header {
     visibility: hidden;
+}
+
+.section-projetos {
+    width: 100%;
+    
 }
