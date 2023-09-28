@@ -13,7 +13,6 @@
 
 
 
-// Obtém o elemento span pelo ID
         let spanElement = document.getElementById("copiar-email");
 
         // Define a palavra que você deseja copiar
@@ -53,7 +52,7 @@
 
             spanElement.addEventListener("click", function(){
 
-                mudarcor.style.backgroundColor = '#8CFF00a7'
+                mudarcor.style.backgroundColor = '#43DF53a8'
 
                 setTimeout(function () {
                 mudarcor.style.backgroundColor = '';

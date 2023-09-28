@@ -62,9 +62,9 @@ body {
     /* background-color: #2a51c6;  */
     /* background-image: linear-gradient(110deg, #57F29A 10%, #2955D9, #2955D9); */
     background-image: linear-gradient(110deg, #F2BA52 10%, #2955D9, #2955D9);
-    background-image: url(../img/teste2.jpg);
+    background-image: url(../img/teste3.jpg);
     background-size: cover;
-     
+    backdrop-filter: blur(6px); 
 } 
 
 main {
@@ -81,11 +81,8 @@ header {
 
 .icone-engrenagem {
     position: absolute;
-    width: 50px;
     left: 2rem;
-     animation: rodar 20s linear infinite;
-
-}
+} 
 
 ul {
     display: flex;
@@ -143,19 +140,19 @@ a {
 }
 
 .nav-menu:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.685);
     cursor: pointer;
 }
 
 .nav-menu:hover:before {
-    border-color: var(--Amarelo);
+    border-color: #ffffffa1;
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .3s;
 }
 
 .nav-menu:hover:after {
-    border-color: var(--Amarelo);
+    border-color: #ffffff93;
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .5s;
@@ -193,12 +190,12 @@ a {
     padding: 1rem;
     width: 400px;
     height: 500px;
-    background-color: rgba(2, 13, 34, 0.482);
+    background-color: rgb(17, 17, 17);
     z-index: -1;
     border-radius: 10px;
     right: -4em;
     bottom: -7em;
-    box-shadow: 4em 4em 0px rgba(2, 13, 34, 0.223);
+    box-shadow: 4em 4em 0px rgba(0, 0, 0, 0.445);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,7 +223,6 @@ h1 {
     width: 4rem;
     border-radius: 10px;
     filter: invert(1);
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 255, 0.303)) invert(1);
     transition: all 0.4s;
 }
 
@@ -287,7 +283,7 @@ h1 {
     text-align: center;
     cursor: pointer;
     padding: 1rem;
-    background-color: #041a4464;
+    background-color: #0000007b;
     backdrop-filter: blur(4px);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.196);
     border-radius: 5px;
@@ -296,8 +292,8 @@ h1 {
 
 #copiar-email:hover {
     transform: scale(1.05);
-    background-color: #020d227b;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.303);
+    background-color: #000000c0;
+    box-shadow: 2px 2px 5px rgb(1, 1, 2);
 }
 
 .scroll-1, .scroll-header {
