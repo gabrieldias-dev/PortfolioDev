@@ -1,24 +1,32 @@
 
-// Transições de entradas
 
+// Transições de entradas - Deixei em uma função anonima alto invocavel para não ficar no escopo global
+(function(){
     window.sr = ScrollReveal({reset:true});
-
     sr.reveal('.scroll-1', {
         // rotate: { x: 100, y:0, z:0 },
         duration: 2000});
-
     sr.reveal('.scroll-2', {duration: 2000});
+    // sr.reveal('.scroll-header', {duration: 2000})
+    
+})()
 
-    sr.reveal('.scroll-header', {duration: 2000})
+    window.addEventListener('scroll', function()
+    {
+        let header = document.querySelector('.scroll-header')
+
+        // Adicionando uma class ao header usando o javascript
+        header.classList.toggle('rolagem',window.scrollY > 50)
+    })
+
+
+    
 
 
 
         let spanElement = document.getElementById("copiar-email");
-
         // Define a palavra que você deseja copiar
         let palavraParaCopiar = "gabrieldias_02@hotmail.com";
-
-        // Adiciona um evento de clique ao elemento span
         spanElement.addEventListener("click", function () {
             // Cria um elemento de área de texto temporário
             var textArea = document.createElement("textarea");
@@ -44,7 +52,7 @@
             // Define um atraso para restaurar o texto original
             setTimeout(function () {
                 spanElement.innerText = "Copiar E-mail";
-            }, 4000); // Restaura o texto original após 4 segundos
+            }, 3000); // Restaura o texto original após 3 segundos
         });
         
         // Mundaça de cor na Caixa de e-mail
