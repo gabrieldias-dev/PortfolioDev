@@ -30,6 +30,9 @@
     100% {transform: rotate(360deg); }
 }
 
+    ::-webkit-scrollbar {
+        display: none;
+    }
 
 @media (min-width: 1024px){
     
@@ -50,6 +53,9 @@
 } 
 
 }
+
+
+
 
 html {
     font-size: 62.5%;
@@ -215,6 +221,11 @@ a {
     text-transform: uppercase;
 }
 
+.meu-nome {
+display: block;
+ font-size: 2.5rem;
+}
+
 h1 {
     font-family: 'Cabin', sans-serif;
     font-size: 10rem;
@@ -236,7 +247,7 @@ h1 {
 
 #info-container {
     display: flex;
-    justify-content: first;
+    justify-content: start;
     font-size: 1.6rem;
     width: 100%;
     text-transform: uppercase;
@@ -246,6 +257,7 @@ h1 {
 #info-resumo {
     width: 60%;
     padding-left: 2em;
+    justify-content: end;
 }
 
 #info-resumo > p {

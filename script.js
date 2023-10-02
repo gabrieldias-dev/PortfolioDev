@@ -1,16 +1,15 @@
 
-
-// Transições de entradas - Deixei em uma função anonima alto invocavel para não ficar no escopo global
 (function(){
     window.sr = ScrollReveal({reset:true});
     sr.reveal('.scroll-1', {
         // rotate: { x: 100, y:0, z:0 },
         duration: 2000});
     sr.reveal('.scroll-2', {duration: 2000});
-    // sr.reveal('.scroll-header', {duration: 2000})
+    sr.reveal('.scroll-header', {duration: 2000})
     
 })()
 
+    // Função que vai ser acioanda quando fizer o scroll da pagina, deixando o menu fixo
     window.addEventListener('scroll', function()
     {
         let header = document.querySelector('.scroll-header')
