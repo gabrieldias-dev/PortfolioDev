@@ -52,13 +52,11 @@
     border-radius: 10px;
 } 
 
-}
-
-
-
+}   
 
 html {
     font-size: 62.5%;
+    scroll-behavior:smooth;
 }
 
 body {
@@ -108,13 +106,13 @@ a {
 /*  Botões menu */
 
 .nav-menu {
-    width: 12rem;
+    width: 12.5rem;
     transition: .5s linear;
     position: relative;
     overflow: hidden;
     padding: 1.3rem;
     text-align: center;
-    margin: 0 5px;
+    margin: 0 1rem;
     background: transparent;
     text-transform: uppercase;
     font-weight: 600;
@@ -166,7 +164,21 @@ a {
     transition: .3s transform linear, .3s height linear .5s;
 }
 
-.container-1 {
+ul li.ativo::after {
+    border-color: #ffffff93;
+    height: 100%;
+    transform: translateX(0);
+    
+}
+
+ul li.ativo::before {
+    border-color: #ffffffa1;
+    height: 100%;
+    transform: translateX(0);
+    
+}
+
+.section-1 {
     height: 70vh;
     display: flex;
     justify-content: center;

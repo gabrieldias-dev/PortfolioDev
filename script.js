@@ -5,7 +5,7 @@
         // rotate: { x: 100, y:0, z:0 },
         duration: 2000});
     sr.reveal('.scroll-2', {duration: 2000});
-    sr.reveal('.scroll-header', {duration: 2000})
+    // sr.reveal('.scroll-header', {duration: 2000})
     
 })()
 
@@ -18,11 +18,21 @@
         header.classList.toggle('rolagem',window.scrollY > 50)
     })
 
+    // Menu selecionado de acordo com a sessão
+    var menuItem = document.querySelectorAll('.nav-menu')
+
+    function selectLink() {
+        menuItem.forEach((item) =>
+        item.classList.remove('ativo')
+        )
+        this.classList.add('ativo')
+    }
+    menuItem.forEach((item)=>
+    item.addEventListener('click', selectLink)
+    )
 
     
-
-
-
+    
         let spanElement = document.getElementById("copiar-email");
         // Define a palavra que você deseja copiar
         let palavraParaCopiar = "gabrieldias_02@hotmail.com";
