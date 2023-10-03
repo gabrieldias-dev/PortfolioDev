@@ -1,4 +1,6 @@
 
+
+// Function responsável pela aparição dos elementos na página
 (function(){
     window.sr = ScrollReveal({reset:true});
     sr.reveal('.scroll-1', {
@@ -9,7 +11,7 @@
     
 })()
 
-    // Função que vai ser acioanda quando fizer o scroll da pagina, deixando o menu fixo
+ // Função que vai ser acioanda quando fizer o scroll da pagina, deixando o menu fixo
     window.addEventListener('scroll', function()
     {
         let header = document.querySelector('.scroll-header')
@@ -18,7 +20,7 @@
         header.classList.toggle('rolagem',window.scrollY > 50)
     })
 
-    // Menu selecionado de acordo com a sessão
+// Menu selecionado de acordo com a sessão que clicar
     var menuItem = document.querySelectorAll('.nav-menu')
 
     function selectLink() {
@@ -32,10 +34,12 @@
     )
 
     
-    
-        let spanElement = document.getElementById("copiar-email");
+// Elementos responsáveis por copiar o e-mail. 
+// Comentei ele todo pois foi a primeira vez que fiz algo do tipo
+
+    let spanElement = document.getElementById("copiar-email");
         // Define a palavra que você deseja copiar
-        let palavraParaCopiar = "gabrieldias_02@hotmail.com";
+    let palavraParaCopiar = "gabrieldias_02@hotmail.com";
         spanElement.addEventListener("click", function () {
             // Cria um elemento de área de texto temporário
             var textArea = document.createElement("textarea");
