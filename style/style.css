@@ -90,7 +90,7 @@ header.rolagem {
 
 }
 
-ul {
+nav {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -101,7 +101,7 @@ ul {
 
 a {
     text-decoration: none;
-}
+}   
 
 /*  Botões menu */
 
@@ -164,14 +164,14 @@ a {
     transition: .3s transform linear, .3s height linear .5s;
 }
 
-ul li.ativo::after {
+nav > a.ativo::after {
     border-color: #ffffff93;
     height: 100%;
     transform: translateX(0);
     
 }
 
-ul li.ativo::before {
+nav > a.ativo::before {
     border-color: #ffffffa1;
     height: 100%;
     transform: translateX(0);
