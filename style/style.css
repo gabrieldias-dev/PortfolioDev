@@ -10,15 +10,8 @@
 }
 
 @keyframes entradaAviao{
-    0%{ 
-        transform: translateX(400px) translateY(100px);
-
-    }
-
-    100%{
-        transform: translateX(0) translateY(0);
-    }
-
+    0%{ transform: translateX(400px) translateY(100px);}
+    100%{ transform: translateX(0) translateY(0);}
 }
 
 @keyframes aviaoFlutuar {
@@ -27,11 +20,10 @@
     100% {transform: translateY(0);}
 }
 
-@keyframes cubo {
+/* @keyframes cubo {
     0% {transform: rotateX(-30deg) rotateY(0);}
-
     100% { transform: rotateX(-30deg) rotateY(360deg);}
-}
+} */
 
 
 ::-webkit-scrollbar {
@@ -76,8 +68,6 @@ body {
 main {
     max-width: 100vw;
 }
-
-
 
 header {
     width: 100%;
@@ -199,8 +189,6 @@ nav > a.ativo::before {
     align-items: center;
     flex-direction: column;
     position: relative;
-    
-    
 }
 
 .info {
@@ -288,8 +276,7 @@ nav > a.ativo::before {
 .aviao-ani {
     width: 370px;
     transform: translateX(400px);
-    animation: entradaAviao 3s 1.3s linear forwards, aviaoFlutuar 8s linear 4.5s infinite alternate;
-    
+    animation: entradaAviao 1.8s .5s linear forwards, aviaoFlutuar 8s linear 2.3s infinite alternate;
 } 
 
 .info > p {
