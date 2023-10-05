@@ -9,6 +9,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@keyframes entradaAviao{
+    0%{ 
+        transform: translateX(400px) translateY(100px);
+
+    }
+
+    100%{
+        transform: translateX(0) translateY(0);
+    }
+
+}
+
 @keyframes aviaoFlutuar {
     0% {transform:  translateY(0);}
     50% {transform: translateY(-25px);}
@@ -186,7 +198,9 @@ nav > a.ativo::before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative
+    position: relative;
+    
+    
 }
 
 .info {
@@ -213,10 +227,11 @@ nav > a.ativo::before {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     /* border: 1rem solid black; */
 }
 
-.cubo {
+/* .cubo {
 
     position: relative;
     width: 250px;
@@ -225,8 +240,6 @@ nav > a.ativo::before {
     animation: cubo 20s linear infinite;
 
 }
-
-
 
 .cubo .container-cubo {
     position: absolute;
@@ -267,16 +280,17 @@ nav > a.ativo::before {
     height: 250px;
     background-color: #828282;
     transform: translateZ(-325px);
-    filter: blur(30px);
+    filter: blur(50px);
 
-}
+} */
 
-/*  Segunda opção, caso eu queria tirar o cubo
 
 .aviao-ani {
     width: 370px;
-    animation: aviaoFlutuar 8s linear infinite alternate; 
-} */
+    transform: translateX(400px);
+    animation: entradaAviao 3s 1.3s linear forwards, aviaoFlutuar 8s linear 4.5s infinite alternate;
+    
+} 
 
 .info > p {
     font-size: 2rem;
