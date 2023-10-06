@@ -63,6 +63,7 @@ body {
     background-image: url(../img/bg11.jpg);
     background-size: cover;
     backdrop-filter: blur(6px); 
+    background-attachment: fixed;
 } 
 
 main {
