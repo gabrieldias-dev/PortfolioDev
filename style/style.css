@@ -178,6 +178,7 @@ nav > a.ativo::before {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid red;
 }
 
 .topo-apresentacao {
@@ -324,11 +325,43 @@ h1 {
 }
 
 .container-2 {
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15rem;
 }
+
+.box-projetos {
+    width: 100%;
+    display: flex;
+
+}
+
+.descricao h2 {
+    font-size: 7rem;
+}
+
+.descricao p {
+    font-size: 2.5rem;
+}
+
+.info-section2 {
+    width: 100%;
+}
+
+.imagem-site {
+    display: flex;
+    justify-content: center;
+}
+
+.info-section2 img {
+    width: 95%;
+    padding: 1rem;
+    border-radius: 5%;
+}
+
+
 
 .container-3 {
     height: 70vh;
