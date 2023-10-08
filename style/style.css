@@ -494,11 +494,11 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20rem;
+    margin-top: 27rem;
 }
 
 .tittle {
-    margin-top: 29rem;
+    margin-top: 30rem;
     width: 100%;
     font-size: 4.5rem;
     text-align: center;
@@ -507,10 +507,12 @@ h1 {
 }
 
 .tittle2 {
-    margin-top: 10rem;
+    margin-top: 9rem;
     width: 100%;
     font-size: 5rem;
     text-align: center;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.67);
 }
 
 .box-projetos {
@@ -527,10 +529,6 @@ h1 {
     justify-content: center;
     align-items: end;
     padding: 0 2rem;
-    
-
-   
-
 }
 
 h3 {
