@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @keyframes entradaAviao{
@@ -66,6 +66,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior:smooth;
+    font-family: 'Montserrat', sans-serif;
     
 }
 
@@ -461,7 +462,7 @@ h1 {
     font-size: 2rem;
     text-align: justify;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     
     padding-bottom: 1.5rem;
 }
@@ -486,7 +487,7 @@ h1 {
 
 
 
-/* Projetos */
+/* ---------------- Projetos --------------------- */
 
  .container-3 {
     min-height: 70vh;
@@ -497,22 +498,23 @@ h1 {
     margin-top: 27rem;
 }
 
-.tittle {
-    margin-top: 30rem;
-    width: 100%;
-    font-size: 4.5rem;
+.title {
+    width: 90%;
+    font-size: 3.5rem;
     text-align: center;
     padding: 1rem 0;
     background-color: rgba(0, 0, 0, 0.67);
+    border-radius: 10px;
 }
 
-.tittle2 {
+.title1 {
+    margin-top: 30rem;
+    width: 95%;
+   
+}
+
+.title2 {
     margin-top: 9rem;
-    width: 100%;
-    font-size: 5rem;
-    text-align: center;
-    padding: 1rem 0;
-    background-color: rgba(0, 0, 0, 0.67);
 }
 
 .box-projetos {
@@ -520,6 +522,7 @@ h1 {
     display: flex;
     margin-top: 10em;
     border-radius: 10px;
+    overflow: hidden;
 
 }
 
@@ -527,21 +530,20 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
     padding: 0 2rem;
 }
 
 h3 {
-    font-size: 4rem;
-    padding-top: 2rem;
+    font-size: 4.5rem;
+    font-weight: 500;
+    width: 75%;
 }
 
 .descricao p {
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.2rem;
     width: 75%;
     padding-top: 1.5rem;
-    
 }
 
 .info-section2 {
@@ -553,28 +555,50 @@ h3 {
     justify-content: center;
 }
 
-.info-section2 img {
-    width: 95%;
-    padding: 2rem;
-    border-radius: 8%;
-}
-
-
-.icones-projetos {
+.icones-projetos{
+    display: flex;
     margin-top: 3rem;
+    gap: 2rem;
 }
+
+.icones-projetos img {
+    width: 2rem;
+}
+
 
 .icones-projetos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem; 
 
     font-size: 2rem;
-    text-align: center;
-    cursor: pointer;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #0000007b;
-    backdrop-filter: blur(4px);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.196);
     border-radius: 5px;
-    transition: all .3s;
+    transition: all .5s;
+}
+
+.icones-projetos a:hover {
+    transform: scale(1.1);
+    background-color: #000000c0;
+    box-shadow: 2px 2px 5px rgb(1, 1, 2);
+}
+
+.imagem-site img {
+    width: 95%;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+.descricao2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: justify;
+    padding: 0 2rem;
 }
 
  
