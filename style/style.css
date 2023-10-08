@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
 @keyframes entradaAviao{
@@ -21,10 +21,22 @@
     100% {transform: translateY(0);}
 }
 
-/* @keyframes cubo {
+@keyframes cubo {
     0% {transform: rotateX(-30deg) rotateY(0);}
     100% { transform: rotateX(-30deg) rotateY(360deg);}
-} */
+}
+
+@keyframes InOut {
+    0% { transform: translateX(0);
+
+    }
+
+    100% {
+        transform: translateX(-50px);
+
+    }
+
+}
 
 
 ::-webkit-scrollbar {
@@ -54,6 +66,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior:smooth;
+    
 }
 
 body {
@@ -235,6 +248,10 @@ display: block;
  font-size: 2.5rem;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Cabin', sans-serif;
+}
+
 h1 {
     font-family: 'Cabin', sans-serif;
     font-size: 10rem;
@@ -242,17 +259,6 @@ h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.423);
 }
 
-.icone-social {
-    width: 4rem;
-    border-radius: 10px;
-    filter: invert(1);
-    transition: all 0.4s;
-}
-
-.icone-social:hover {
-    transform: scale(1.2);
-
-}
 
 #info-container {
     display: flex;
@@ -329,21 +335,30 @@ h1 {
 
 .container-2 {
     height: 70vh;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
     margin-top: 20rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.container-2 h2 {
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+
 
 .Box-SobreMim {
     width: 100%;
     height: 100%;
     position: relative;
-
     display: flex;
-    margin-top: 18rem;
-    border: 2px solid red;
+    
 }
 
 
@@ -355,6 +370,7 @@ h1 {
 
 .fundo-animacao2 {
     animation: Flutuar 8s linear infinite alternate;
+    /* animation: InOut 5s linear infinite alternate; */
 }
 
 .maoRobo {
@@ -376,25 +392,14 @@ h1 {
     height: 170px;
     transform-style: preserve-3d;
     transform: rotateX(-30deg);
-    animation: animate 8s linear infinite;
+    animation: cubo 8s linear infinite;
 }
 
-@keyframes animate {
-    0% {
-        transform: rotateX(-30deg) rotateY(0);
-    }
-
-    100% {
-        transform: rotateX(-30deg) rotateY(360deg);
-    }
-}
 
 .cube-loader .cube-wrapper {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* top: 0;
-    left: 0; */
     transform-style: preserve-3d;
 }
 
@@ -435,6 +440,45 @@ h1 {
         0 0 40px hsl(0, 0%, 100%) 19.6%;
 }
 
+.info-pessoais {
+    padding: 4rem 6rem;
+}
+
+.info-pessoais h3 {
+    font-size: 3rem;
+    padding: 1rem 0 2rem 0;
+    text-align: center;
+    
+}
+
+.info-pessoais p {
+    font-size: 2rem;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    
+    padding-bottom: 1.5rem;
+}
+
+.info-pessoais div {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.icone-social {
+    width: 4.5rem;
+    border-radius: 10px;
+    filter: invert(1);
+    transition: all 0.4s;
+}
+
+.icone-social:hover {
+    transform: scale(1.2);
+}
+
+
 
 /* Projetos */
 
@@ -468,7 +512,7 @@ h1 {
     justify-content: center;
     align-items: end;
     padding: 0 2rem;
-    font-family: 'Montserrat', sans-serif;
+    
 
    
 
