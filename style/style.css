@@ -7,8 +7,9 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Todas animações criadas */
 
 @keyframes entradaAviao{
     0%{ transform: translateX(400px) translateY(100px);}
@@ -27,21 +28,14 @@
 }
 
 @keyframes InOut {
-    0% { transform: translateX(0);
-
-    }
-
-    100% {
-        transform: translateX(-50px);
-
-    }
-
+    0% {ransform: translateX(0);}
+    100% {transform: translateX(-50px);}
 }
 
 
 ::-webkit-scrollbar {
         display: none;
-    }
+}
 
 @media (min-width: 1024px){
     
@@ -116,7 +110,7 @@ a {
 /*  Botões menu */
 
 .nav-menu {
-    width: 12.5rem;
+    width: 13.2rem;
     transition: .5s linear;
     position: relative;
     overflow: hidden;
@@ -238,12 +232,6 @@ nav > a.ativo::before {
     animation: entradaAviao 1.8s .5s linear forwards, Flutuar 8s linear 2.3s infinite alternate;
 } 
 
-.info > p {
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
 .meu-nome {
 display: block;
  font-size: 2.5rem;
@@ -259,7 +247,6 @@ h1 {
     text-transform: uppercase;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.423);
 }
-
 
 #info-container {
     display: flex;
@@ -342,32 +329,14 @@ h1 {
     align-items: center; 
     flex-direction: column;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
     margin-top: 10rem;
 }
 
-/* .section-2 h2 {
-    margin-top: 30rem;
-    width: 100%;
-    font-size: 5rem;
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: rgba(0, 0, 0, 0.295);
-} */
-
-
-
 .Box-SobreMim {
-    /* width: 100%; */
-    /* height: 100%; */
     position: relative;
     display: flex;
-
     margin-top: 2rem;
 }
-
-
 
 .fundo-animacao2, .info-pessoais {
     position: relative;
@@ -377,6 +346,7 @@ h1 {
 .fundo-animacao2 {
     animation: Flutuar 8s linear infinite alternate;
     overflow: hidden;
+    width: 50%;
     /* animation: InOut 5s linear infinite alternate; */
 }
 
@@ -388,7 +358,7 @@ h1 {
 
 }
 
-/* animação  */
+/* Animação Cubo 3D  */
 
 .cube-loader {
     position: absolute;
@@ -401,7 +371,6 @@ h1 {
     transform: rotateX(-30deg);
     animation: cubo 8s linear infinite;
 }
-
 
 .cube-loader .cube-wrapper {
     position: absolute;
@@ -418,7 +387,7 @@ h1 {
     left: 0; */
     /* width 75px / 2 = 37.5px */
     transform: rotateY(calc(90deg * var(--i))) translateZ(85px);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.877), rgba(255, 255, 255, 0.773)
+    background: linear-gradient(to bottom, #000000e0, #ffffffc5
     )
 }
 
@@ -441,14 +410,14 @@ h1 {
     background: hsla(0, 0%, 0%, 0.586) 19.6%;
     transform: translateZ(-200px);
     filter: blur(10px);
-    box-shadow: 0 0 10px #323232,
-        0 0 20px hsl(0, 0%, 100%) 19.6%,
-        0 0 30px #323232,
-        0 0 40px hsl(0, 0%, 100%) 19.6%;
+    box-shadow: 0px 0px 10px #323232;
 }
 
 .info-pessoais {
     padding: 4rem 6rem;
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 47.5%;
+    border-radius: 10px;
 }
 
 .info-pessoais h3 {
@@ -478,7 +447,7 @@ h1 {
     width: 4.5rem;
     border-radius: 10px;
     filter: invert(1);
-    transition: all 0.4s;
+    transition: all 0.3s;
 }
 
 .icone-social:hover {
@@ -486,7 +455,24 @@ h1 {
     box-shadow: 5px 5px 6px rgba(255, 255, 255, 0.814);
 }
 
-
+.iconeDownload:hover::before {
+    content: 'Download Currículo';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 11rem;
+    bottom: 7.5rem;
+    color: white;
+    font-size: 1.5rem;
+    background-color: #000000bc;
+    width: 140px;
+    height: 40px;
+    border: 2px solid rgb(77, 77, 77);
+    border-radius: 10px;
+    z-index: 1;
+    transition: all 0.4s;
+}
 
 /* ---------------- Projetos --------------------- */
 
@@ -496,7 +482,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 27rem;
+    margin-top: 10rem;
 }
 
 .title {
@@ -509,7 +495,7 @@ h1 {
 }
 
 .title1 {
-    margin-top: 5rem;
+    margin-top: 7rem;
     width: 95%;
    
 }
@@ -545,6 +531,7 @@ h3 {
     font-size: 2.2rem;
     width: 75%;
     padding-top: 1.5rem;
+    text-align: justify;
 }
 
 .info-section2 {
@@ -566,14 +553,14 @@ h3 {
     width: 2rem;
 }
 
-
 .icones-projetos a {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .5rem; 
 
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
     padding: 1.5rem;
     background-color: #0000007b;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.196);
@@ -627,7 +614,6 @@ h3 {
     justify-content: space-around;
 }
  
-
 .card-container {
     width: 250px;
     height: 300px;
@@ -683,7 +669,6 @@ transition: all 1s linear;
 .content p {
     font-size: 1.5rem;
 }
-
 
 .card:hover .content {
     transform: translateY(0);
