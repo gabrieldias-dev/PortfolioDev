@@ -59,7 +59,7 @@
 
 html {
     font-size: 62.5%;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth; 
     font-family: 'Montserrat', sans-serif;
     
 }
@@ -362,14 +362,14 @@ h1 {
 
 .cube-loader {
     position: absolute;
-    right: 6rem;
-    top: 15rem;
-    /* u can choose any size */
+    bottom: 35%;
+    left: 67%;
     width: 170px;
     height: 170px;
     transform-style: preserve-3d;
     transform: rotateX(-30deg);
     animation: cubo 8s linear infinite;
+
 }
 
 .cube-loader .cube-wrapper {
@@ -461,8 +461,8 @@ h1 {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 11rem;
-    bottom: 7.5rem;
+    right: 21rem;
+    bottom: 9rem;
     color: white;
     font-size: 1.5rem;
     background-color: #000000bc;
