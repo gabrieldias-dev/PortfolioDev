@@ -28,8 +28,8 @@
 }
 
 @keyframes InOut {
-    0% {ransform: translateX(0);}
-    100% {transform: translateX(-50px);}
+    0% {transform: translateX(0) translateY(0);}
+    100% {transform: translateX(-40px) translateY(-50px);}
 }
 
 
@@ -344,10 +344,10 @@ h1 {
 }
 
 .fundo-animacao2 {
-    animation: Flutuar 8s linear infinite alternate;
     overflow: hidden;
     width: 50%;
     /* animation: InOut 5s linear infinite alternate; */
+    animation: InOut 10s linear infinite alternate;
 }
 
 .maoRobo {
