@@ -452,10 +452,10 @@ h1 {
 }
 
 .info-pessoais h3 {
+    width: 100%;
     font-size: 3rem;
     padding: 1rem 0 2rem 0;
     text-align: center;
-    
 }
 
 .info-pessoais p {
@@ -610,7 +610,6 @@ h3 {
     flex-direction: column;
     align-items: center;
     margin-top: 10rem;
-    border: 1px solid red;
 }
 
 .title3 {
@@ -620,13 +619,17 @@ h3 {
 .box-habilidades {
     width: 100%;
     margin-top: 5rem;
-    border: 1px solid white;
     padding: 3rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
 }
  
 
 .card-container {
-    width: 300px;
+    width: 250px;
     height: 300px;
     position: relative;
     border-radius: 10px;
@@ -638,6 +641,7 @@ h3 {
     width: 100%;
     height: 100%;
     border-radius: inherit;
+    background-color: #0000007b;
 }
 
 .card .front-content {
@@ -646,18 +650,11 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+    transition: all 0.6s linear;
 }
 
 .card .front-content p {
-    font-size: 32px;
-    font-weight: 700;
-    opacity: 1;
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+transition: all 1s linear;
 }
 
 .card .content {
@@ -671,21 +668,22 @@ h3 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 10px;
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    gap: 1rem;
+    
+    background: linear-gradient(-45deg, #7b7b7b 0%, #3d3d3d 100%);
     color: #e8e8e8;
     padding: 20px;
     line-height: 1.5;
     border-radius: 5px;
-    pointer-events: none;
+    
     transform: translateX(-96%);
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.card .content .heading {
-    font-size: 32px;
-    font-weight: 700;
+.content p {
+    font-size: 1.5rem;
 }
+
 
 .card:hover .content {
     transform: translateY(0);

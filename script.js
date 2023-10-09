@@ -3,20 +3,16 @@
 // Function responsável pela aparição dos elementos na página
 (function(){
     window.sr = ScrollReveal({reset:true});
-    sr.reveal('.scroll-1', {
-        // rotate: { x: 100, y:0, z:0 },
-        duration: 2000});
+    sr.reveal('.scroll-1', {duration: 2000});
     sr.reveal('.scroll-2', {duration: 2000});
-    // sr.reveal('.scroll-header', {duration: 2000})
-    
 })()
 
- // Função que vai ser acioanda quando fizer o scroll da pagina, deixando o menu fixo
+ // Função que vai ser acionada quando fizer o scroll da pagina, deixando o menu fixo no topo.
     window.addEventListener('scroll', function()
     {
         let header = document.querySelector('.scroll-header')
 
-        // Adicionando uma class ao header usando o javascript
+        // Adicionando uma class ao header quando o scroll for maior que 50px
         header.classList.toggle('rolagem',window.scrollY > 50)
     })
 
@@ -37,6 +33,7 @@
 // Comentei ele todo pois foi a primeira vez que fiz algo do tipo
 
     let spanElement = document.getElementById("copiar-email");
+
         // Define a palavra que você deseja copiar
     let palavraParaCopiar = "gabrieldias_02@hotmail.com";
         spanElement.addEventListener("click", function () {
@@ -58,13 +55,13 @@
             // Remove o elemento de área de texto temporário da página
             document.body.removeChild(textArea);
 
-            // Ação de feedback (opcional)
+            // Ação mostrada ao usuario após o click(opcional)
             spanElement.innerText = "E-mail Copiado!" 
         
             // Define um atraso para restaurar o texto original
             setTimeout(function () {
                 spanElement.innerText = "Copiar E-mail";
-            }, 3000); // Restaura o texto original após 3 segundos
+            }, 3000);
         });
         
         // Mundaça de cor na Caixa de e-mail
@@ -76,7 +73,7 @@
 
                 setTimeout(function () {
                 mudarcor.style.backgroundColor = '';
-            }, 500); // Restaurar cor original após meio segundo
+            }, 500);
 
             })
 
