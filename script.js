@@ -13,7 +13,7 @@
         let header = document.querySelector('.scroll-header')
 
         // Adicionando uma class ao header quando o scroll for maior que 50px
-        header.classList.toggle('rolagem',window.scrollY > 50)
+        header.classList.toggle('rolagem', window.scrollY > 50)
     })
 
 // Menu selecionado de acordo com a sessão que clicar
