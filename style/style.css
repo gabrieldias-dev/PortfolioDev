@@ -333,7 +333,6 @@ h1 {
 }
 
 .topo-sobre {
-    border: 1px solid white;
     margin-top: 5rem;
 }
 
@@ -351,7 +350,6 @@ h1 {
 .fundo-animacao2 {
     overflow: hidden;
     width: 50%;
-    /* animation: InOut 5s linear infinite alternate; */
     animation: InOut 10s linear infinite alternate;
 }
 
@@ -451,7 +449,6 @@ h1 {
 .box-iconesSociais {
     width: 100%;
     position: relative;
-    border: 1px solid white;
 }
 
 .icone-social {
@@ -484,6 +481,24 @@ h1 {
     transition: all 0.4s;
 }
 
+.title {
+    width: 95%;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.67);
+    border-radius: 10px;
+}
+
+.title1 {
+    margin-top: 9rem;
+    width: 90%;
+}
+
+.title2 {
+    margin-top: 9rem;
+}
+
 /* ---------------- Projetos --------------------- */
 
  .container-3 {
@@ -495,31 +510,15 @@ h1 {
     margin-top: 10rem;
 }
 
-.title {
-    width: 90%;
-    font-size: 3.5rem;
-    text-align: center;
-    padding: 1rem 0;
-    background-color: rgba(0, 0, 0, 0.67);
-    border-radius: 10px;
-}
-
-.title1 {
-    margin-top: 9rem;
-    width: 95%;
-   
-}
-
-.title2 {
-    margin-top: 9rem;
-}
-
 .box-projetos {
+    position: relative;
     width: 95%;
     display: flex;
     margin-top: 10em; 
     border-radius: 10px;
     overflow: hidden;
+    border: 3px solid white;
+    padding: 1rem;
 }
 
 .descricao {
@@ -527,7 +526,17 @@ h1 {
     flex-direction: column;
     justify-content: center;
     padding: 0 2rem;
-    border: 1px solid white;
+}
+
+.descricao::before {
+    position: absolute;
+    content: '';
+    width: 85%;
+    height: 100%;
+    left: -5rem;
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 10px;
+    z-index: -1;
 }
 
 h3 {
@@ -545,13 +554,15 @@ h3 {
 }
 
 .info-section2 {
-    width: 100%;
+    position: relative;
+    /* width: 50%; */
+    border: 1px solid rgb(185, 59, 59);
+    
 }
 
 .imagem-site {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .icones-projetos{
@@ -586,9 +597,43 @@ h3 {
 }
 
 .imagem-site img {
-    width: 95%;
+    width: 100%;
     border-radius: 3rem;
 }
+.imagem-site span img {
+    width: 50px;
+    filter: invert(1);
+    animation: mouse 2.5s linear infinite alternate;
+}
+
+@keyframes mouse {
+    0% {transform: translateX(-12px);}
+    100% {transform: translateX(12px);}
+}
+
+.filtro-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    background-color: #949494a6;
+    transition: background-color .5s;
+}
+
+.filtro-img:hover {
+    background-color: #00000000;
+    border: none;
+    transition: all .5s;
+}
+
+.filtro-img:hover > img {
+    display: none;
+
+}
+
 
 .descricao2 {
     display: flex;
