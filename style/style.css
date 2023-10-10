@@ -218,7 +218,7 @@ nav > a.ativo::before {
     border-radius: 10px;
     right: -4em;
     bottom: -7em;
-    box-shadow: 4em 4em 0px rgba(0, 0, 0, 0.445);
+    box-shadow: 4em 4em 0 rgba(0, 0, 0, 0.445);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +245,7 @@ h1 {
     font-family: 'Cabin', sans-serif;
     font-size: 10rem;
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.423);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.423);
 }
 
 #info-container {
@@ -419,7 +419,7 @@ h1 {
 .info-pessoais {
     padding: 4rem 6rem;
     background-color: rgba(0, 0, 0, 0.445);
-    width: 47.5%;
+    width: 45%;
     border-radius: 10px;
 }
 
@@ -517,27 +517,27 @@ h1 {
     margin-top: 10em; 
     border-radius: 10px;
     overflow: hidden;
-    border: 3px solid white;
     padding: 1rem;
 }
 
-.descricao {
+.descricao-site {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 2rem;
 }
 
-.descricao::before {
+  .descricao-site::before {
     position: absolute;
     content: '';
     width: 85%;
-    height: 100%;
+    height: 95%;
     left: -5rem;
-    background-color: rgba(0, 0, 0, 0.445);
+    background-color: rgba(0, 0, 0, 0.329);
     border-radius: 10px;
     z-index: -1;
-}
+    left: 4rem;
+}  
 
 h3 {
     font-size: 4.5rem;
@@ -545,7 +545,7 @@ h3 {
     width: 75%;
 }
 
-.descricao p {
+.descricao-site p {
     width: 100%;
     font-size: 2.2rem;
     width: 75%;
@@ -553,14 +553,8 @@ h3 {
     text-align: justify;
 }
 
-.info-section2 {
-    position: relative;
-    /* width: 50%; */
-    border: 1px solid rgb(185, 59, 59);
-    
-}
-
 .imagem-site {
+    position: relative;
     display: flex;
     justify-content: center;    
 }
@@ -619,7 +613,8 @@ h3 {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    background-color: #949494a6;
+    background-color: #000000b9;
+    /* filter: blur(5px); */
     transition: background-color .5s;
 }
 
@@ -631,18 +626,8 @@ h3 {
 
 .filtro-img:hover > img {
     display: none;
-
 }
 
-
-.descricao2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    text-align: justify;
-    padding: 0 2rem;
-}
 
 /* ---------------- Habilidades ----------------- */
 
