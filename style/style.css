@@ -9,7 +9,7 @@
     color: white;
 }
 
-/* Todas animações criadas */
+/* Todas animações de keyframe do site */
 
 @keyframes entradaAviao{
     0%{ transform: translateX(400px) translateY(100px);}
@@ -31,6 +31,12 @@
     0% {transform: translateX(0) translateY(0);}
     100% {transform: translateX(-40px) translateY(-50px);}
 }
+
+@keyframes mouse {
+    0% {transform: translateX(-12px);}
+    100% {transform: translateX(12px);}
+}
+
 
 
 ::-webkit-scrollbar {
@@ -527,7 +533,7 @@ h1 {
     padding: 0 2rem;
 }
 
-  .descricao-site::before {
+  .descricao1::before {
     position: absolute;
     content: '';
     width: 85%;
@@ -539,10 +545,14 @@ h1 {
     left: 4rem;
 }  
 
-h3 {
+h3, h4 {
     font-size: 4.5rem;
     font-weight: 500;
     width: 75%;
+}
+
+h4 {
+    font-size: 2.5rem;
 }
 
 .descricao-site p {
@@ -600,11 +610,6 @@ h3 {
     animation: mouse 2.5s linear infinite alternate;
 }
 
-@keyframes mouse {
-    0% {transform: translateX(-12px);}
-    100% {transform: translateX(12px);}
-}
-
 .filtro-img {
     display: flex;
     justify-content: center;
@@ -613,7 +618,7 @@ h3 {
     width: 100%;
     height: 100%;
     border-radius: 3rem;
-    background-color: #000000b9;
+    background-color: #000000ca;
     /* filter: blur(5px); */
     transition: background-color .5s;
 }
@@ -626,6 +631,33 @@ h3 {
 
 .filtro-img:hover > img {
     display: none;
+}
+
+
+.descricao2::before {
+    position: absolute;
+    content: '';
+    width: 85%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
+    z-index: -1;
+    right: 4rem;
+}
+
+.descricao2 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 0 2rem;
+}
+
+.descricao2 h3 {
+   text-align: end;
+}
+
+.descricao2 h4 {
+    text-align: end;
 }
 
 
@@ -721,4 +753,3 @@ transition: all 1s linear;
 .card:hover .front-content p {
     opacity: 0;
 }
-
