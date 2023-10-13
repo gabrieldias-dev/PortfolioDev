@@ -35,7 +35,7 @@
     let spanElement = document.getElementById("copiar-email");
 
         // Define a palavra que você deseja copiar
-    let palavraParaCopiar = "gabrieldias_02@hotmail.com";
+    let palavraParaCopiar = "gabrieldias_dev@outlook.com";
         spanElement.addEventListener("click", function () {
             // Cria um elemento de área de texto temporário
             var textArea = document.createElement("textarea");
