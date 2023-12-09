@@ -52,7 +52,7 @@
     transform: translateX(0) translateY(0);
   }
   100% {
-    transform: translateX(-40px) translateY(-50px);
+    transform: translateX(-3rem) translateY(-4rem);
   }
 }
 
@@ -122,7 +122,6 @@
   header {
     width: 100%;
     padding: 1rem;
-
     position: sticky;
     top: 0;
     z-index: 100;
@@ -141,6 +140,7 @@
     font-size: 1.5rem;
     gap: 2rem;
     list-style-type: none;
+
   }
 
   a {
@@ -232,9 +232,10 @@
 
   .section-1 {
     height: calc(100vh + var(--nav-height) );
-    padding-top: 9rem;
+    padding-top: 9rem;  
     display: flex;
     justify-content: center;
+    align-items: top;
   }
 
   .topo-apresentacao {
@@ -374,58 +375,105 @@
 
   /* --------------  Sobre mim --------------*/
 
+  #sobre > .alinhamentoGeral {
+    
+
+  }
   .section-2 {
-    background-color: #515151;
+    background-color: #515151af;
+    width: 100vw;
     min-height: 100vh;
-    width: 100%;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding-top: var(--nav-height);
+  }
+
+  .titulo {
+    background-color: rgba(0, 0, 0, 0.647);
+    backdrop-filter: blur(5px);
+    font-size: 3rem;
+    padding: 2rem 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    margin-top: 10rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
   }
 
-  .topo-sobre {
-    margin-top: 5rem;
-  }
-
-  .Box-SobreMim {
-    position: relative;
+  .container-sobre {
     display: flex;
-    margin-top: 2rem;
+    justify-content: space-between;
+    width: 100%;
+    
+    
   }
 
-  .fundo-animacao2,
-  .info-pessoais {
+  .animacao-mao {
     position: relative;
-    width: 50%;
+    width: 49%;
+    height: 53rem;
+    animation: InOut 7s linear infinite alternate; 
+
   }
 
-  .fundo-animacao2 {
-    overflow: hidden;
-    width: 50%;
-    animation: InOut 10s linear infinite alternate;
-  }
-
-  .maoRobo {
+  .animacao-mao > img {
+    width: 85rem;
     position: absolute;
-    left: -18rem;
-    top: -5rem;
-    filter: drop-shadow(8px 8px 4px rgba(0, 0, 0, 0.84));
+    left: -10rem;
+
   }
 
-  /* Animação Cubo 3D  */
+  .info-pessoais {
+    width: 49%;
+    height: 53rem;
+    background-color: rgba(0, 0, 0, 0.764);
+    padding: 3rem;
+    text-align: justify;
+    border-radius: 1rem;
+  }
+
+  .info-pessoais h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .info-pessoais p {
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .box-iconesSociais {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    filter: invert(1);
+  }
+
+  .box-iconesSociais img {
+    width: 4.5rem;
+    transition: all .5s;
+  }
+
+  .box-iconesSociais img:hover {
+    transform: scale(1.15);
+  }
+
+ 
+
+  /* Animação Cubo 3D */
 
   .cube-loader {
     position: absolute;
-    bottom: 35%;
-    left: 67%;
-    width: 170px;
-    height: 170px;
+    z-index: 1;
+    bottom: 45%;
+    right: 10%;
+    width: 16rem;
+    height: 16rem;
     transform-style: preserve-3d;
     transform: rotateX(-30deg);
-    animation: cubo 8s linear infinite;
+    animation: cubo 16s linear infinite;
   }
 
   .cube-loader .cube-wrapper {
@@ -439,117 +487,33 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    /* top: 0;
-    left: 0; */
-    /* width 75px / 2 = 37.5px */
-    transform: rotateY(calc(90deg * var(--i))) translateZ(85px);
+    top: 0;
+    left: 0;
+    
+    transform: rotateY(calc(90deg * var(--i))) translateZ(8rem);
     background: linear-gradient(to bottom, #000000e0, #ffffffc5);
   }
 
   .cube-top {
     position: absolute;
-    width: 170px;
-    height: 170px;
+    width: 16rem;
+    height: 16rem;
     background: hsla(330, 3%, 25%, 0.892) 0%;
-    /* width 75px / 2 = 37.5px */
-    transform: rotateX(90deg) translateZ(85px);
+    transform: rotateX(90deg) translateZ(8rem);
     transform-style: preserve-3d;
   }
 
   .cube-top::before {
     content: "";
     position: absolute;
-    /* u can choose any size */
-    width: 170px;
-    height: 170px;
+    width: 16rem;
+    height: 16rem;
     background: hsla(0, 0%, 0%, 0.586) 19.6%;
     transform: translateZ(-200px);
     filter: blur(10px);
     box-shadow: 0px 0px 10px #323232;
-  }
+  } 
 
-  .info-pessoais {
-    padding: 4rem 6rem;
-    background-color: rgba(0, 0, 0, 0.445);
-    width: 45%;
-    border-radius: 10px;
-  }
-
-  .info-pessoais h3 {
-    width: 100%;
-    font-size: 3rem;
-    padding: 1rem 0 2rem 0;
-    text-align: center;
-  }
-
-  .info-pessoais p {
-    font-size: 2rem;
-    text-align: justify;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-
-    padding-bottom: 1.5rem;
-  }
-
-  .info-pessoais div {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-  }
-
-  .box-iconesSociais {
-    width: 100%;
-    position: relative;
-  }
-
-  .icone-social {
-    width: 4.5rem;
-    border-radius: 10px;
-    filter: invert(1);
-    transition: all 0.3s;
-  }
-
-  .icone-social:hover {
-    transform: scale(1.2);
-    box-shadow: 5px 5px 6px rgba(255, 255, 255, 0.814);
-  }
-
-  .iconeDownload:hover::before {
-    content: "Download Currículo";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 4.8rem;
-    color: white;
-    font-size: 1.5rem;
-    background-color: #000000bc;
-    width: 140px;
-    height: 40px;
-    border: 2px solid rgb(77, 77, 77);
-    border-radius: 10px;
-    z-index: 1;
-    transition: all 0.4s;
-  }
-
-  .title {
-    width: 95%;
-    font-size: 3.5rem;
-    text-align: center;
-    padding: 1rem 0;
-    background-color: rgba(0, 0, 0, 0.67);
-    border-radius: 10px;
-  }
-
-  .title1 {
-    margin-top: 9rem;
-    width: 90%;
-  }
-
-  .title2 {
-    margin-top: 9rem;
-  }
 
   /* ---------------- Projetos --------------------- */
 
