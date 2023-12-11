@@ -433,6 +433,7 @@
   .info-pessoais h3 {
     display: block;
     width: 100%;
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 1.5rem;
   }
@@ -518,7 +519,7 @@
   /* ---------------- Projetos --------------------- */
 
   .container-3 {
-    min-height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -527,148 +528,67 @@
   }
 
   .box-projetos {
-    position: relative;
-    width: 95%;
-    display: flex;
-    margin-top: 10em;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 1rem;
-  }
-
-  .descricao-site {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 2rem;
   }
 
-  .descricao1::before {
-    position: absolute;
-    content: "";
-    width: 85%;
-    height: 95%;
-    left: -5rem;
-    background-color: rgba(0, 0, 0, 0.329);
-    border-radius: 10px;
-    z-index: -1;
-    left: 4rem;
-  }
-
-  h3,
-  h4 {
-    font-size: 4.5rem;
-    font-weight: 500;
-    width: 75%;
-  }
-
-  h4 {
-    font-size: 2.5rem;
-  }
-
-  .descricao-site p {
-    width: 100%;
-    font-size: 2.2rem;
-    width: 75%;
-    padding-top: 1.5rem;
-    text-align: justify;
-  }
-
-  .imagem-site {
-    position: relative;
+  .lado-esquerda {
+    width: 90%;
     display: flex;
-    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.593);
+    border-radius: 1rem;
   }
 
-  .icones-projetos {
-    display: flex;
-    margin-top: 3rem;
-    gap: 2rem;
-  }
-
-  .icones-projetos img {
-    width: 2rem;
-  }
-
-  .icones-projetos a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding: 1.5rem;
-    background-color: #0000007b;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.196);
-    border-radius: 5px;
-    transition: all 0.5s;
-  }
-
-  .icones-projetos a:hover {
-    transform: scale(1.1);
-    background-color: #000000c0;
-    box-shadow: 2px 2px 5px rgb(1, 1, 2);
+   .imagem-site {
+    width: 60%;
+    border-radius: 2rem;
+    overflow: hidden;
   }
 
   .imagem-site img {
     width: 100%;
-    border-radius: 3rem;
-  }
-  .imagem-site span img {
-    width: 50px;
-    filter: invert(1);
-    animation: mouse 2.5s linear infinite alternate;
   }
 
-  .filtro-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 3rem;
-    background-color: #000000ca;
-    /* filter: blur(5px); */
-    transition: background-color 0.5s;
-  }
-
-  .filtro-img:hover {
-    background-color: #00000000;
-    border: none;
-    transition: all 0.5s;
-  }
-
-  .filtro-img:hover > img {
-    display: none;
-  }
-
-  .descricao2::before {
-    position: absolute;
-    content: "";
-    width: 85%;
-    height: 95%;
-    background-color: rgba(0, 0, 0, 0.329);
-    border-radius: 10px;
-    z-index: -1;
-    right: 4rem;
-  }
-
-  .descricao2 {
+  .descricao-site {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    justify-content: center;
     padding: 0 2rem;
   }
 
-  .descricao2 h3 {
-    text-align: end;
+  .descricao-site > h3 {
+    font-size: 3rem;
+    padding: 1rem 0;
   }
 
-  .descricao2 h4 {
-    text-align: end;
+  .descricao-site h4 {
+    font-size: 2.2rem;
+    padding: 1rem 0;
   }
+
+  .descricao-site p {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+  }
+
+  .icones-projetos {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .icones-projetos a {
+    margin-right: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #3d3d3d;
+    
+  }
+
+
+  
 
   /* ---------------- Habilidades ----------------- */
 
