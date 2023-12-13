@@ -17,6 +17,20 @@
 
 /* Todas animações de keyframe do site */
 
+@keyframes xiado {
+  0% {opacity: 100%;}
+  38% {opacity: 100%;}
+  40% {opacity: 60%;}
+  42% {opacity: 100%;}
+  44% {opacity: 60%;}
+  46% {opacity: 100%;}
+  48% {opacity: 60%;}
+  50% {opacity: 100%;}
+  100% {opacity: 100%;}
+}
+
+
+
 @keyframes entradaAviao {
   0% {
     transform: translateX(400px) translateY(100px);
@@ -468,13 +482,13 @@
   .cube-loader {
     position: absolute;
     z-index: 1;
-    bottom: 45%;
+    top: 15%;
     right: 10%;
-    width: 16rem;
-    height: 16rem;
+    width: 19rem;
+    height: 19rem;
     transform-style: preserve-3d;
     transform: rotateX(-30deg);
-    animation: cubo 16s linear infinite;
+    animation: cubo 16s linear infinite;  
   }
 
   .cube-loader .cube-wrapper {
@@ -491,28 +505,40 @@
     top: 0;
     left: 0;
     
-    transform: rotateY(calc(90deg * var(--i))) translateZ(8rem);
-    background: linear-gradient(to bottom, #000000e0, #ffffffc5);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(9.5rem);
+    background: linear-gradient(to bottom,  #ffffffc5, #000000e0); 
+    animation: xiado 5s linear infinite;
+    
+     /* opacity: 80%; */
+  }
+
+  .cube-loader .cube-wrapper .cube-span img {
+    width: 100% ;
+    display: none;
+    
   }
 
   .cube-top {
     position: absolute;
-    width: 16rem;
-    height: 16rem;
+    width: 19rem;
+    height: 19rem;
     background: hsla(330, 3%, 25%, 0.892) 0%;
-    transform: rotateX(90deg) translateZ(8rem);
+    transform: rotateX(90deg) translateZ(9.5rem);
     transform-style: preserve-3d;
+    
   }
 
   .cube-top::before {
     content: "";
     position: absolute;
-    width: 16rem;
-    height: 16rem;
-    background: hsla(0, 0%, 0%, 0.586) 19.6%;
-    transform: translateZ(-200px);
+    width: 19rem;
+    height: 19rem;
+    background: rgba(0, 0, 0, 0.586) 19.6%;
+    transform: translateZ(-25rem);
     filter: blur(10px);
     box-shadow: 0px 0px 10px #323232;
+    animation: xiado 5s linear infinite;
+   
   } 
 
 
