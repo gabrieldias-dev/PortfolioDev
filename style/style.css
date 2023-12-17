@@ -501,16 +501,20 @@
     left: 0;
     
     transform: rotateY(calc(90deg * var(--i))) translateZ(9.5rem);
-    background: linear-gradient(to bottom,  #ffffffc5, #000000e0); 
+    background: linear-gradient(to bottom,  #000000e0, #cbcbcbc5 ); 
     animation: xiado 5s linear infinite;
     
      /* opacity: 80%; */
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
   }
 
-  .cube-loader .cube-wrapper .cube-span img {
-    width: 100% ;
-    display: none;
-    
+   .cube-span img {
+    width: 95% ;
+    filter: saturate(50%);
+  
   }
 
   .cube-top {
@@ -549,6 +553,7 @@
   }
 
   .box-projetos {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -559,16 +564,18 @@
     display: flex;
     background-color: rgba(0, 0, 0, 0.593);
     border-radius: 1rem;
+    margin-bottom: 10rem;
   }
 
    .imagem-site {
     width: 60%;
-    border-radius: 2rem;
+    border-radius: 1rem;
     overflow: hidden;
   }
 
   .imagem-site img {
     width: 100%;
+    height: 100%;
   }
 
   .descricao-site {
@@ -608,6 +615,28 @@
     
   }
 
+  .lado-direito {
+    position: relative;
+    right: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0.593);
+    border-radius: 1rem;
+    margin-bottom: 10rem;
+
+  }
+
+  .imagem-site {
+    width: 60%;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .imagem-site img {
+    width: 100%;
+    height: 100%;
+  }
 
   
 
