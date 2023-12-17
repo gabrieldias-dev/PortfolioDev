@@ -718,7 +718,7 @@
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     background-attachment: fixed;
-    overflow: auto;
+    overflow: hidden;
   }
 
   .alinhamentoGeral {
@@ -852,7 +852,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    padding: 2rem;
+    padding: 0 1rem;
     flex-direction: column;
   }
 
@@ -930,7 +930,10 @@
     border: 2px solid rgba(255, 255, 255, 0.566);
     transition: background-color 0.6s;
     font-size: 1.3rem;
-    text-decoration: none;
+     text-decoration: none;
+     text-decoration-style: none; 
+     text-underline-position: none; 
+     text-underline-offset: none;
   }
 
   #icone-email {
