@@ -396,7 +396,12 @@
     padding-top: var(--nav-height);
   }
 
+  .section-2 > .alinhamentoGeral {
+    margin-top: 1rem;
+  }
+
   .titulo {
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.647);
     backdrop-filter: blur(5px);
     font-size: 3rem;
@@ -411,8 +416,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    
-    
   }
 
   .animacao-mao {
@@ -552,6 +555,10 @@
     margin-top: 10rem;
   }
 
+  .container-3 > .alinhamentoGeral {
+    margin-top: 6rem;
+  }
+
   .box-projetos {
     position: relative;
     width: 100%;
@@ -559,8 +566,13 @@
     flex-direction: column;
   }
 
+  .container-esquerdo {
+    width: 100%;
+  }
+
   .lado-esquerda {
     width: 90%;
+    height: 43rem;
     display: flex;
     background-color: rgba(0, 0, 0, 0.593);
     border-radius: 1rem;
@@ -583,10 +595,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 2rem;
+    padding: 0 3rem;
+    text-align: justify;
   }
 
-  .descricao-site > h3 {
+  .descricao-site  h3 {
     font-size: 3rem;
     padding: 1rem 0;
   }
@@ -605,17 +618,32 @@
     display: flex;
     align-items: center;
     font-size: 1.5rem;
+    margin-top: 2rem;
   }
 
+  
   .icones-projetos a {
     margin-right: 2rem;
     padding: 1rem 2rem;
     border-radius: 1rem;
     background-color: #3d3d3d;
-    
+    transition: all .3s;
+  }
+
+  .icones-projetos a:hover {
+    transform: scale(1.1);
+  }
+
+
+  .container-direito {
+    width: 100%;
+    display: flex;
+    justify-content: end;
   }
 
   .lado-direito {
+    width: 90%;
+    height: 43rem;
     position: relative;
     right: 0;
     width: 90%;
@@ -638,6 +666,18 @@
     height: 100%;
   }
 
+  .lado-direito > .descricao-site {
+    text-align: justify;
+  }
+
+  .lado-direito > .descricao-site > h3, .lado-direito > .descricao-site > h4 {
+    text-align: end;
+  }
+
+  .lado-direito > .descricao-site > .icones-projetos {
+    justify-content: end;
+  }
+
   
 
   /* ---------------- Habilidades ----------------- */
@@ -658,11 +698,14 @@
     width: 100%;
     margin-top: 5rem;
     padding: 3rem;
+    
   }
 
   .cards {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5rem;
   }
 
   .card-container {
@@ -692,6 +735,10 @@
 
   .card .front-content p {
     transition: all 1s linear;
+  }
+
+  .card .front-content p img {
+    width: 15rem;
   }
 
   .card .content {
@@ -747,7 +794,7 @@
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     background-attachment: fixed;
-    overflow: hidden;
+    overflow: auto;
   }
 
   .alinhamentoGeral {
@@ -913,7 +960,7 @@
 
   h1 {
     font-family: "Cabin", sans-serif;
-    font-size: 4rem;
+    font-size: 3.7rem;
     text-transform: uppercase;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.423);
     padding: 0;
@@ -944,7 +991,7 @@
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .ende-email {
@@ -959,16 +1006,12 @@
     border: 2px solid rgba(255, 255, 255, 0.566);
     transition: background-color 0.6s;
     font-size: 1.3rem;
-     text-decoration: none;
-     text-decoration-style: none; 
-     text-underline-position: none; 
-     text-underline-offset: none;
   }
 
   #icone-email {
     width: 4.5rem;
     border-right: 1px solid rgb(0, 0, 0);
-    padding: 0 .5em 0 0;
+    padding: 0 1.5rem 0 0;
     filter: invert(1);
   }
 
@@ -984,8 +1027,8 @@
     background-color: #0000008c;
     backdrop-filter: blur(4px);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.196);
-    border-radius: 5px;
-    transition: all 0.3s;
+    border-radius: .5rem;
+  
   }
 
   .scroll-1 {
@@ -1234,9 +1277,8 @@
     margin-top: 10rem;
   }
 
-  .title3 {
-    margin-top: 9rem;
-  }
+  
+
 
   .box-habilidades {
     width: 100%;
