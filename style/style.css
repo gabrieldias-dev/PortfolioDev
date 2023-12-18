@@ -690,9 +690,6 @@
     margin-top: 10rem;
   }
 
-  .title3 {
-    margin-top: 9rem;
-  }
 
   .box-habilidades {
     width: 100%;
@@ -705,14 +702,14 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 4rem;
   }
 
   .card-container {
-    width: 250px;
-    height: 300px;
+    width: 20rem;
+    height: 25rem;
     position: relative;
-    border-radius: 10px;
+    border-radius: 1rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
   }
@@ -738,7 +735,7 @@
   }
 
   .card .front-content p img {
-    width: 15rem;
+    width: 12rem;
   }
 
   .card .content {
@@ -752,20 +749,24 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 1rem;
 
     background: linear-gradient(-45deg, #7b7b7b 0%, #3d3d3d 100%);
     color: #e8e8e8;
-    padding: 20px;
-    line-height: 1.5;
-    border-radius: 5px;
+    padding: .8rem;
 
     transform: translateX(-96%);
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   }
 
+  .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+
   .content p {
     font-size: 1.5rem;
+    
   }
 
   .card:hover .content {
