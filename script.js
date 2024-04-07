@@ -2,29 +2,9 @@ window.sr = ScrollReveal({ reset: true });
 sr.reveal(".scroll-1", { duration: 2000 });
 sr.reveal(".scroll-2", { duration: 2000 });
 
-
-// // Função que vai ser acionada quando fizer o scroll da pagina, deixando o menu fixo no topo.
-// window.addEventListener("scroll", function () {
-//   let header = document.querySelector(".scroll-header");
-
-//   // Adicionando uma class ao header quando o scroll for maior que 50px
-//   header.classList.toggle("rolagem", window.scrollY > 50);
-// });
-
-// // Menu selecionado de acordo com a sessão que clicar
-// var menuItem = document.querySelectorAll(".nav-menu");
-
-// function selectLink() {
-//   menuItem.forEach((item) => item.classList.remove("ativo"));
-//   this.classList.add("ativo");
-// }
-// menuItem.forEach((item) => item.addEventListener("click", selectLink));
-
-
 window.addEventListener("scroll", onScroll);
 onScroll();
 
-// Função responsável por gerenciar as funções do scroll na pagina
 function onScroll() {
   showNavOnScroll();
   menuAtivado(inicio);
@@ -35,12 +15,7 @@ function onScroll() {
 
 function showNavOnScroll() {
   const navigation = document.querySelector(".scroll-header");
-  if (scrollY > 10) {
-    navigation.classList.add("rolagem");
-  } else {
-    navigation.classList.remove("ativo");
-  }
-
+ 
   navigation.classList.toggle("rolagem", window.scrollY > 50);
 }
 
@@ -75,21 +50,9 @@ function menuAtivado(section) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 // Elementos responsáveis por copiar o e-mail.
-// Comentei ele todo pois foi a primeira vez que fiz algo do tipo
 
 let spanElement = document.getElementById("copiar-email");
-
 // Define a palavra que você deseja copiar
 let palavraParaCopiar = "gabrieldias_dev@outlook.com";
 spanElement.addEventListener("click", function () {
@@ -107,7 +70,6 @@ spanElement.addEventListener("click", function () {
 
   // Copia o texto para a área de transferência
   document.execCommand("copy");
-
   document.body.removeChild(textArea);
 
   // Ação mostrada ao usuario após o click(opcional)
@@ -118,7 +80,6 @@ spanElement.addEventListener("click", function () {
     spanElement.innerText = "Copiar E-mail";
   }, 3000);
 });
-
 
 let mudarcor = document.querySelector(".ende-email");
 spanElement.addEventListener("click", function () {
