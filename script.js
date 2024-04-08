@@ -1,3 +1,4 @@
+
 window.sr = ScrollReveal({ reset: true });
 sr.reveal(".scroll-1", { duration: 2000 });
 sr.reveal(".scroll-2", { duration: 2000 });

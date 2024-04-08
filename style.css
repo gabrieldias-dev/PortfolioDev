@@ -226,24 +226,21 @@
 
   /* -------- Inicio -------------- */
 
-  #inicio > .alinhamentoGeral {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-  }
+ 
 
-  .section-1 {
-    height: calc(100vh + var(--nav-height) );
-    padding-top: 9rem;  
+  .sectionInicio {
+    width: 100vw;
+    height: calc(100vh - var(--nav-height) ); 
     display: flex;
+    padding: 5rem;
     justify-content: center;
-    align-items: top;
+    align-items: center;
+    border: 1px solid white;
   }
 
   .topo-apresentacao {
     position: relative;
     display: flex;
-    width: 120rem;
     height: 49rem;
     align-items: left;
     justify-content: left;
@@ -375,8 +372,8 @@
     visibility: hidden;
   }
 
-  /* --------------  Sobre mim --------------*/
 
+/* 
   
   .section-2 {
     background-color: #515151e5;
@@ -465,7 +462,7 @@
 
  
 
-  /* Animação Cubo 3D */
+  
 
   .cube-loader {
     position: absolute;
@@ -497,7 +494,7 @@
     background: linear-gradient(to bottom,  #000000e0, #cbcbcbc5 ); 
     animation: xiado 5s linear infinite;
     
-     /* opacity: 80%; */
+    
 
      display: flex;
      justify-content: center;
@@ -534,7 +531,7 @@
   } 
 
 
-  /* ---------------- Projetos --------------------- */
+  
 
   .container-3 {
     width: 100vw;
@@ -670,7 +667,7 @@
 
   
 
-  /* ---------------- Habilidades ----------------- */
+  
 
   .container-4 {
     min-height: 100vh;
@@ -769,7 +766,7 @@
 
   .card:hover .front-content p {
     opacity: 0;
-  }
+  } */
 
 
-
+ 
