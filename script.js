@@ -1,4 +1,3 @@
-
 window.sr = ScrollReveal({ reset: true });
 sr.reveal(".scroll-1", { duration: 2000 });
 sr.reveal(".scroll-2", { duration: 2000 });
@@ -54,7 +53,6 @@ function menuAtivado(section) {
 // Elementos responsáveis por copiar o e-mail.
 
 let spanElement = document.getElementById("copiar-email");
-// Define a palavra que você deseja copiar
 let palavraParaCopiar = "gabrieldias_dev@outlook.com";
 spanElement.addEventListener("click", function () {
   // Cria um elemento de área de texto temporário

@@ -106,7 +106,7 @@
     max-width: 100vw;
     position: relative;
     min-height: 100vh;
-    background-image: url(../img/bg11.jpg);
+    background-image: url(img/bg11.jpg);
     background-size: cover;
     backdrop-filter: blur(6px);
     background-attachment: fixed;
@@ -123,17 +123,21 @@
 
   header {
     width: 100%;
-    padding: 1rem;
+    padding: 0rem 2rem;
     position: sticky;
     top: 0;
     z-index: 100;
     height: 7.5rem;
+    padding: 0 3rem;
   }
 
   header.rolagem {
-    background-color: #1f2426;
+    background-color: #1f24268e;
     transition: all 0.5s;
+    height: auto;
   }
+
+  
 
   nav {
     display: flex;
@@ -142,7 +146,7 @@
     font-size: 1.5rem;
     gap: 2rem;
     list-style-type: none;
-
+    padding: 2rem;
   }
 
   a {
@@ -152,17 +156,15 @@
   /*  Botões menu */
 
   .nav-menu {
-    width: 13.2rem;
     transition: 0.5s linear;
     position: relative;
     overflow: hidden;
     padding: 1.3rem;
     text-align: center;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
     background: transparent;
     text-transform: uppercase;
     font-weight: 600;
-    border-radius: 2px;
   }
 
   .nav-menu::before {
@@ -170,30 +172,10 @@
     content: "";
     left: 0;
     bottom: 0;
-    height: 4px;
     width: 100%;
-    border-bottom: 2px solid transparent;
-    border-left: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     box-sizing: border-box;
     transform: translateX(100%);
-  }
-
-  .nav-menu::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-top: 2px solid transparent;
-    border-right: 2px solid transparent;
-    box-sizing: border-box;
-    transform: translateX(-100%);
-  }
-
-  .nav-menu:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.685);
-    cursor: pointer;
   }
 
   .nav-menu:hover:before {
@@ -203,20 +185,7 @@
     transition: 0.3s transform linear, 0.3s height linear 0.3s;
   }
 
-  .nav-menu:hover:after {
-    border-color: #ffffff93;
-    height: 100%;
-    transform: translateX(0);
-    transition: 0.3s transform linear, 0.3s height linear 0.5s;
-  }
-
-  nav > a.ativo::after {
-    border-color: #ffffff93;
-    height: 100%;
-    transform: translateX(0);
-    transition: all .1s;
-  }
-
+ 
   nav > a.ativo::before {
     border-color: #ffffffa1;
     height: 100%;
@@ -224,7 +193,7 @@
     transition: all .1s;
   }
 
-  /* -------- Inicio -------------- */
+  /* -------- Section Inicio -------------- */
 
  
 
@@ -235,7 +204,7 @@
     padding: 5rem;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+
   }
 
   .topo-apresentacao {
@@ -307,16 +276,18 @@
     display: flex;
     justify-content: start;
     font-size: 1.6rem;
-    width: 100%;
+    width: 75rem;
     text-transform: uppercase;
     font-weight: 600;
-    padding-left: 0.3rem;
+    padding-left: 0.3rem;  
     
   }
 
   #info-resumo {
-    width: 60%;
+    margin-top: 2rem;
+    width: 100%;
     justify-content: end;
+    
   }
 
   #info-resumo > p {
@@ -324,7 +295,7 @@
   }
 
   .container-email {
-    margin-top: 1em;
+    margin-top: 2em;
     display: flex;
     gap: 1rem;
   }
@@ -373,36 +344,34 @@
   }
 
 
-/* 
+  /* --------- Section Sobre ---------- */
+
   
-  .section-2 {
-    background-color: #515151e5;
+  .sectionSobre {
     width: 100vw;
     min-height: 100vh;
+    
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    padding-top: var(--nav-height);
+    padding: 5rem;
   }
 
-  .section-2 > .alinhamentoGeral {
-    margin-top: 1rem;
-  }
+ 
 
   .titulo {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.647);
-    backdrop-filter: blur(5px);
     font-size: 3rem;
-    padding: 2rem 0;
+    padding: 4rem 0;
     display: flex;
     justify-content: center;
-    border-radius: 1rem;
-    margin-bottom: 2rem;
+    font-family: "Cabin", sans-serif;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.423);
+   
   }
 
   .container-sobre {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+    margin: 5rem 0;
   }
 
   .animacao-mao {
@@ -461,9 +430,6 @@
   }
 
  
-
-  
-
   .cube-loader {
     position: absolute;
     z-index: 1;
@@ -532,7 +498,7 @@
 
 
   
-
+/* 
   .container-3 {
     width: 100vw;
     display: flex;
