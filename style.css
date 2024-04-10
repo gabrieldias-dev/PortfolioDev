@@ -344,37 +344,52 @@
   }
 
 
-  /* --------- Section Sobre ---------- */
+  /* --------------- Section Sobre --------------- */
 
   
   .sectionSobre {
     width: 100vw;
     min-height: 100vh;
-    
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
  
 
   .titulo {
+    width: 80%;
     font-size: 3rem;
-    padding: 4rem 0;
+    padding: 2rem 10rem;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     font-family: "Cabin", sans-serif;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.423);
+    text-transform: uppercase;
    
   }
 
-  .container-sobre {
+   .container-sobre {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 5rem 0;
+    justify-content: left;
+    width: 80%;
+    padding: 1rem 10rem;
+    margin: 1rem 0;
+    
   }
 
-  .animacao-mao {
+  .boxOne {
+    justify-content: left;
+  }
+
+  .boxTwo {
+    justify-content: right;
+    transform: translateY(-10rem);
+  }
+
+  /*.animacao-mao {
     position: relative;
     width: 49%;
     height: 53rem;
@@ -387,30 +402,40 @@
     position: absolute;
     left: -10rem;
 
-  }
+  } */
 
   .info-pessoais {
-    width: 49%;
-    height: 53rem;
+    width: 45%;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.764);
-    padding: 3rem;
+    padding: 4rem;
     text-align: justify;
     border-radius: 1rem;
+    border: 2px solid white;
+    box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.658);
+  }
+
+  .infoBoxTwo {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.658);
+
   }
 
   .info-pessoais h3 {
     display: block;
     width: 100%;
-    font-size: 3rem;
-    text-align: center;
+    font-size: 2.5rem;
+    text-align: left;
     margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid white;
   }
 
   .info-pessoais p {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-family: "Montserrat", sans-serif;
+    
   }
 
   .box-iconesSociais {
