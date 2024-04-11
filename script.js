@@ -18,7 +18,7 @@ function onScroll() {
 function showNavOnScroll() {
   const navigation = document.querySelector(".scroll-header");
  
-  navigation.classList.toggle("rolagem", window.scrollY > 50);
+  navigation.classList.toggle("rolagem", window.scrollY > 90);
 }
 
 function menuAtivado(section) {
