@@ -361,7 +361,7 @@
 
   .titulo {
     width: 80%;
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding: 2rem 10rem;
     display: flex;
     justify-content: left;
@@ -387,6 +387,7 @@
   .boxTwo {
     justify-content: right;
     transform: translateY(-30rem);
+    z-index: -1;
   }
 
   /*.animacao-mao {
@@ -409,7 +410,6 @@
     height: auto;
     background-color: rgba(0, 0, 0, 0.764);
     padding: 4rem;
-    text-align: justify;
     border-radius: 1rem;
     border: 2px solid white;
     box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.658);
@@ -423,7 +423,7 @@
   .info-pessoais h3 {
     display: block;
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: left;
     margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
@@ -443,14 +443,17 @@
     display: flex;
     justify-content: space-evenly;
     filter: invert(1);
+   
   }
+
+  
 
   .box-iconesSociais img {
     width: 4.5rem;
     transition: all .5s;
   }
 
-  .box-iconesSociais img:hover {
+  .box-iconesSociais a img:hover {
     transform: scale(1.15);
   }
 
