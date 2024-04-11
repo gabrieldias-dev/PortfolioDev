@@ -2,12 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Lora:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
-* {
+*, *::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
+   margin: 0;
+  padding: 0;
+  
 }
+
 
 :root {
   font-size: 62.5%;
@@ -339,9 +344,9 @@
     box-shadow: 2px 2px 5px rgb(1, 1, 2);
   }
 
-  .scroll-1 {
+   .scroll-1 {
     visibility: hidden;
-  }
+  } 
 
 
   /* --------------- Section Sobre --------------- */
@@ -389,6 +394,24 @@
     transform: translateY(-30rem);
     z-index: -1;
   }
+
+  .typing-container {
+    text-align: center;
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#typing-text {
+    display: inline-block;
+    border-right: 2px solid #e5e1e1;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(30, end) infinite;
+    color: white;
+}
+
 
   /*.animacao-mao {
     position: relative;
@@ -524,10 +547,16 @@
    
   } 
 
+  .typing-container {
+    text-align: center;
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+}
 
-  
-/* 
-  .container-3 {
+
+/* --------------- Section Projeto --------------- */
+
+  .sectionProjetos {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -536,9 +565,6 @@
     margin-top: 10rem;
   }
 
-  .container-3 > .alinhamentoGeral {
-    margin-top: 6rem;
-  }
 
   .box-projetos {
     position: relative;
@@ -661,7 +687,7 @@
 
   
 
-  
+/*   
 
   .container-4 {
     min-height: 100vh;
@@ -760,7 +786,94 @@
 
   .card:hover .front-content p {
     opacity: 0;
-  } */
+  }  */
+
+
+  /* ---------- SEction comparação fotos -------------------- */
+
+  /* .containerFotos {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.containerFotos img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  --position: 50%;
+}
+
+.image-container {
+  max-width: 800px;
+  max-height: 90vh;
+  aspect-ratio: 1/1;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.image-before {
+  position: absolute;
+  inset: 0;
+  width: var(--position);
+   filter: grayscale(100%) 
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  opacity: 0;
+ 
+  width: 100%;
+  height: 100%;
+}
+
+.slider:focus-visible ~ .slider-button {
+  outline: 5px solid black;
+  outline-offset: 3px;
+}
+
+.slider-line {
+  position: absolute;
+  inset: 0;
+  width: .2rem;
+  height: 100%;
+  background-color: #fff;
+  
+  left: var(--position);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.slider-button {
+  position: absolute;
+  background-color: #fff;
+  color: black;
+  padding: .5rem;
+  border-radius: 100vw;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: var(--position);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+ 
+  box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+} */
+
 
 
  
