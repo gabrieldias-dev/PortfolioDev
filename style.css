@@ -91,10 +91,10 @@
 
 @keyframes mouse {
   0% {
-    transform: translateX(-12px);
+    transform: translateX(-2rem);
   }
   100% {
-    transform: translateX(12px);
+    transform: translateX(2rem);
   }
 }
 
@@ -367,7 +367,7 @@ h1 {
 }
 
 .titulo {
-  width: 80%;
+  width: 100%;
   font-size: 3.5rem;
   padding: 2rem 10rem;
   display: flex;
@@ -380,7 +380,7 @@ h1 {
 .container-sobre {
   display: flex;
   justify-content: left;
-  width: 80%;
+  width: 100%;
   padding: 1rem 10rem;
   margin: 1rem 0;
 }
@@ -456,7 +456,7 @@ h1 {
 }
 
 .containerProjetos {
-  width: 80%;
+  width: 100%;
   height: auto;
   padding: 1rem 10rem;
   display: flex;
@@ -469,13 +469,15 @@ h1 {
   width: 100%;
   height: 45rem;
   display: flex;
+  
   border-radius: 1.5rem;
   overflow: hidden;
-  /* border: 2px solid rgb(74, 74, 74); */
+  
 }
 
 .videoSite {
-  width: 70%;
+  position: relative;
+  width: auto;
   height: 100%;
 }
 
@@ -483,12 +485,36 @@ h1 {
   height: 100%;
 }
 
-.descricaoSite {
-  background-color: rgba(0, 0, 0, 0.764);
+.camadaSobreposta {
+  position: absolute;
   width: 100%;
   height: 100%;
-  padding: 3rem 2rem;
+  background-color: #000000ad;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+  transition: all 1s;
+  
+
 }
+
+.camadaSobreposta img {
+  filter: invert(1);
+  animation: mouse 1.5s linear infinite alternate;
+}
+
+.descricaoSite {
+  background-color: rgba(0, 0, 0, 0.764);
+  width: min( 50rem, 100%); 
+  height: 100%;
+  padding: 3rem 2rem;
+  border-radius: 0 1.5rem 1.5rem 0;
+ 
+}
+
+ /* quando a largura for menor que 70rem(700px) pega 100% */
 
 .descricaoSite h3 {
   font-size: 2.5rem;
@@ -497,7 +523,77 @@ h1 {
 
 .descricaoSite p {
   font-size: 1.8rem;
+  font-weight: 500;
 }
+
+.box-btn-projetos {
+  display: flex;
+  justify-content: left;
+  padding: 5rem 0;
+  gap: 3rem;
+}
+
+.btn-projetos {
+  width: 15rem;
+  position: relative;
+  padding: 1.2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #353535;
+  border-radius: 1rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.btn-projetos::before,
+.btn-projetos::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  z-index: -1;
+  transform: translate(100%, -25%) translate3d(0, 0, 0);
+}
+
+.btn-projetos:hover {
+  transform: scale(1.1);
+}
+
+.btn-projetos:hover::before,
+.btn-projetos:hover::after {
+  opacity: 0.15;
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  
+}
+
+.btn-projetos:hover::before {
+  transform: translate3d(50%, 0, 0) scale(0.9);
+}
+
+.btn-projetos:hover::after {
+  transform: translate(50%, 0) scale(1.1);
+}
+
+.boxProjetoRight {
+  justify-content: right;
+}
+
+.boxProjetoRight .descricaoSite {
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
 
 /*   
 
