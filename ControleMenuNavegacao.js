@@ -2,6 +2,7 @@
  sr.reveal(".scroll-1", { duration: 2000 });
  sr.reveal(".scroll-2", { duration: 2000 });
  sr.reveal(".scroll-3", { duration: 2000 });
+ sr.reveal(".scroll-4", { duration: 2000 });
 
 
 window.addEventListener("scroll", onScroll);

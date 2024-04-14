@@ -349,9 +349,9 @@ h1 {
   box-shadow: 2px 2px 5px rgb(1, 1, 2);
 }
 
-.scroll-1 {
+/* .scroll-1 {
   visibility: hidden;
-}
+} */
 
 /* --------------- Section Sobre --------------- */
 
@@ -475,21 +475,28 @@ h1 {
   
 }
 
-.videoSite {
+.gifSite {
   position: relative;
-  width: auto;
+  width: 80rem;
+  
+}
+
+.gifProjeto {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.gifProjeto img {
+  width: 100%;
   height: 100%;
 }
 
-.videoSite video {
-  height: 100%;
-}
-
-.camadaSobreposta {
+ .camadaSobreposta {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #000000ad;
+  background-color: #000000d2;
 
   display: flex;
   justify-content: center;
@@ -497,19 +504,22 @@ h1 {
   opacity: 100%;
   transition: all 1s;
   
-
 }
 
 .camadaSobreposta img {
   filter: invert(1);
   animation: mouse 1.5s linear infinite alternate;
+} 
+
+.camadaSobreposta:hover {
+  opacity: 0;
 }
 
 .descricaoSite {
   background-color: rgba(0, 0, 0, 0.764);
   width: min( 50rem, 100%); 
   height: 100%;
-  padding: 3rem 2rem;
+  padding: 3rem 3rem;
   border-radius: 0 1.5rem 1.5rem 0;
  
 }
@@ -594,10 +604,27 @@ h1 {
   border-radius: 1.5rem 0 0 1.5rem;
 }
 
+.todosProjetos {
+  margin: 10rem 0;
+  transition: transform 0.2s;
+}
 
-/*   
+.todosProjetos a {
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
-  .container-4 {
+.todosProjetos:hover {
+  transform: scale(1.05);
+}
+
+
+/* --------------- Section Habilidades --------------- */
+  
+
+  .sectionProjeto {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -694,7 +721,7 @@ h1 {
 
   .card:hover .front-content p {
     opacity: 0;
-  }  */
+  }  
 
 /* ---------- SEction comparação fotos -------------------- */
 
