@@ -827,3 +827,29 @@ h1 {
 footer {
   width: 100%;
 }
+
+.creditos-copywriting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.2rem;
+  color: white;
+  background-color: #1f2426;
+  height: 8.5rem;
+}
+
+.creditos-copywriting p:nth-child(1) {
+  font-size: 1.3rem;
+  color: var(--var-green);
+}
+
+.creditos-copywriting a {
+  color: var(--var-white);
+  text-decoration: none;
+}
+
+.creditos-copywriting a:hover {
+  text-decoration: underline;
+}
