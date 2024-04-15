@@ -608,7 +608,7 @@ h1 {
   margin: 10rem 0;
   transition: transform 0.2s;
 }
-
+/* 
 .todosProjetos a {
   font-size: 2rem;
   font-weight: 500;
@@ -618,7 +618,62 @@ h1 {
 
 .todosProjetos:hover {
   transform: scale(1.05);
+} */
+
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
+
+.cta span {
+  padding-bottom: .7rem;
+  letter-spacing: .4rem;
+  font-size: 2rem;
+  padding-right: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+  filter: invert(1);
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: rgb(255, 255, 255);
+  padding-bottom: 2rem;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 
 /* --------------- Section Habilidades --------------- */
 
@@ -754,7 +809,7 @@ h1 {
   overflow: hidden;
   border-radius: 1rem;
   --position: 50%;
-  border: 2px solid white;
+
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.663);
   
   
@@ -778,7 +833,7 @@ h1 {
   position: absolute;
   inset: 0;
   width: var(--position);
-   filter: grayscale(100%) 
+   /* filter: grayscale(100%)  */
 }
 
 .slider {
@@ -801,7 +856,7 @@ h1 {
   inset: 0;
   width: .2rem;
   height: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   
   left: var(--position);
   transform: translateX(-50%);
