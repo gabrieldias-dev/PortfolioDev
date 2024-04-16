@@ -790,10 +790,18 @@ h1 {
 
 /* ---------- SEction comparação fotos -------------------- */
 
+.sectionProjeto {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+
+}
  .containerFotos {
   display: grid;
   place-items: center;
   min-height: 100vh;
+  padding: 0 4rem;
+  background-color: #000000c4;
 
 }
 
@@ -803,6 +811,8 @@ h1 {
 }
 
 .container {
+  height: 50%;
+  width: 50vw;
   display: grid;
   place-content: center;
   position: relative;
