@@ -33,3 +33,20 @@ boxImagemTwo.addEventListener("mouseout", function () {
 
 
 
+let boxImagemThree = document.querySelector(".gifSiteThree");
+let easyBank = document.querySelector("#siteEasy");
+
+// Adiciona um ouvinte de evento para quando o mouse passar por cima da imagem
+boxImagemThree.addEventListener("mouseover", function () {
+  // Altera o atributo src da imagem para a nova imagem
+  easyBank.src = "easybank.gif";
+});
+
+// Adiciona um ouvinte de evento para quando o mouse sair da imagem (para voltar à imagem original, se necessário)
+boxImagemThree.addEventListener("mouseout", function () {
+  // Volta o atributo src da imagem para a imagem original
+  easyBank.src = "easy.png";
+});
+
+
+
