@@ -134,6 +134,15 @@ body {
   overflow: overlay;
 }
 
+#particles-js {
+  position: absolute; 
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 section {
   padding: 5rem;
 }
@@ -154,6 +163,7 @@ header {
 
 header.rolagem {
   background-color: #1f24268e;
+  /* #1f24268e; */
   transition: all 0.5s;
   height: auto;
 }
