@@ -162,7 +162,7 @@ header {
 }
 
 header.rolagem {
-  background-color: #1f24268e;
+  background-color: #1f2426b6;
   /* #1f24268e; */
   transition: all 0.5s;
   height: auto;
@@ -211,7 +211,7 @@ a {
   border-color: #ffffffa1;
   height: 100%;
   transform: translateX(0);
-  transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  transition: 0.2s transform linear;
 }
 
 nav > a.ativo::before {
@@ -221,7 +221,7 @@ nav > a.ativo::before {
   transition: all 0.1s;
 }
 
-/* -------- Section Inicio -------------- */
+/* --------------------- Section Inicio ---------------- */
 
 .sectionInicio {
   width: 100vw;
@@ -466,8 +466,8 @@ h1 {
 }
 
 .sectionProjetos .titulo {
-  margin-bottom: 3rem;
-  justify-content: right;
+  margin-bottom: 10rem;
+  justify-content: center;
 }
 
 .containerProjetos {

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortfolioDias</title>
 
-    
-     <!-- <script src="https://unpkg.com/scrollreveal"></script>    -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/programacao.png" type="image/x-icon">
-     <link rel="stylesheet" href="style.css"> 
+
 
 </head>
 
@@ -39,10 +39,10 @@
         <section class="sectionInicio" id="inicio">
             <div class="topo-apresentacao">
                 <div class="fundo-animacao ">
-                    <img src="img/aviao-papel2.png" alt="" class="aviao-ani scroll-2"> 
+                    <img src="img/aviao-papel2.png" alt="" class="aviao-ani">
                 </div>
 
-                <div class="info scroll-1">
+                <div class="info">
                     <h1>
                         <span class="meu-nome">
                             Olá, eu sou o Gabriel Dias
@@ -50,7 +50,7 @@
                         Desenvolvedor Front-end
                     </h1>
                 </div>
-                <div id="info-container" class="scroll-1">
+                <div id="info-container">
                     <div id="info-resumo">
                         <p>Expert em Desenvolvimento Web, Especializado em Experiências Dinâmicas e Imersivas.</p>
                         <div class="container-email">
@@ -66,13 +66,13 @@
 
 
 
-        <section class="sectionSobre" id="sobre">
+        <section class="sectionSobre" id="sobre" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
 
-            <div class="titulo scroll-2">
+            <div class="titulo">
                 <h2>Quem sou eu</h2>
             </div>
             <div class="container-sobre boxOne">
-                <div class="info-pessoais infoBoxOne scroll-2">
+                <div class="info-pessoais infoBoxOne">
                     <h3>Um pouco sobre mim</h3>
                     <p>Prazer, sou o Gabriel Dias, desenvolvedor web desde 2022, com foco em criações
                         dinâmicas e imersivas visando a experiência do cliente.</p>
@@ -91,7 +91,7 @@
 
                 </div>
             </div>
-            <div class="container-sobre boxTwo scroll-3">
+            <div class="container-sobre boxTwo">
                 <div class="info-pessoais infoBoxTwo">
                     <h3>Mais um pouco</h3>
                     <p>Além do código, também valorizo a colaboração e o trabalho em equipe. Acredito que as melhores
@@ -105,35 +105,39 @@
                         conversar mais sobre como posso
                         contribuir para o sucesso do seu projeto.
                     </p>
-                    
                 </div>
 
             </div>
 
         </section>
-       
+
 
         <section class="sectionProjetos" id="projetos">
             <div class="titulo titulo2">
-                <h2>ALGUNS PROJETOS</h2>
+                <h2>ALGUNS DOS MEUS PROJETOS</h2>
             </div>
             <div class="containerProjetos">
 
-                <div class="boxProjetos boxProjetoRight">
-                    
+                <!-- Projeto 1 -->
+                <div class="boxProjetos boxProjetoRight" data-aos="fade-left">
+
                     <div class="descricaoSite">
                         <h3>Patinhas Online - ONG</h3>
-                        <p>Site foi desenvolvido para uma ONG de proteção aos animais. A Patinhas Online é um grupo de voluntários empenhados na luta contra o abandono de animais. Ocdeles trabalho consiste em oferecer aos animais
-                        carentes uma segunda chance. Esses animais são vítimas de abandono, tortura, crueldade e descaso e assumimos a missão de
-                        ajudá-los a superar o passado e encontrar um novo lar.</p>
+                        <p>Site foi desenvolvido para uma ONG de proteção aos animais. A Patinhas Online é um grupo de
+                            voluntários empenhados na luta contra o abandono de animais. Ocdeles trabalho consiste em
+                            oferecer aos animais
+                            carentes uma segunda chance. Esses animais são vítimas de abandono, tortura, crueldade e
+                            descaso e assumimos a missão de
+                            ajudá-los a superar o passado e encontrar um novo lar.</p>
                         <div class="box-btn-projetos">
-                        <a href="https://gabrieldias-dev.github.io/PatinhasOnline/index.html" class="btn-projetos" target="_blank">
-                            <span>visitar site</span>
-                         </a>
-                         <a href="" class="btn-projetos">
-                            <span>código</span>
-                         </a>
-                        </div> 
+                            <a href="https://gabrieldias-dev.github.io/PatinhasOnline/index.html" class="btn-projetos"
+                                target="_blank">
+                                <span>visitar site</span>
+                            </a>
+                            <a href="" class="btn-projetos">
+                                <span>código</span>
+                            </a>
+                        </div>
                     </div>
                     <div class="gifSite">
                         <span class="camadaSobreposta">
@@ -145,7 +149,8 @@
                     </div>
                 </div>
 
-                <div class="boxProjetos boxProjetoLeft">
+                <!-- Projeto 2 -->
+                <div class="boxProjetos boxProjetoLeft" data-aos="fade-right">
                     <div class="gifSite gifSiteTwo">
                         <span class="camadaSobreposta">
                             <img src="img/mouse.png" alt="">
@@ -156,11 +161,15 @@
                     </div>
                     <div class="descricaoSite">
                         <h3>Happy Bowl</h3>
-                        <p>Site desenvolvido afins de estudos a partir de um design criado pela Leticia Queiroz Carvalho. O Happy Bowlm, seu paraíso culinário em Los Angeles. Tem a missão de conectar você com a pura essência da
-                        verdadeira comida nutritiva. Nossa filosofia é simples: fornecer os ingredientes mais frescos de origem local, cuidadosamente misturados em pratos
-                        que não apenas satisfazem o seu paladar, mas também promovem o bem-estar.</p>
+                        <p>Site desenvolvido afins de estudos a partir de um design criado pela Leticia Queiroz
+                            Carvalho. O Happy Bowlm, seu paraíso culinário em Los Angeles. Tem a missão de conectar você
+                            com a pura essência da
+                            verdadeira comida nutritiva. Nossa filosofia é simples: fornecer os ingredientes mais
+                            frescos de origem local, cuidadosamente misturados em pratos
+                            que não apenas satisfazem o seu paladar, mas também promovem o bem-estar.</p>
                         <div class="box-btn-projetos">
-                            <a href="https://gabrieldias-dev.github.io/PatinhasOnline/index.html" class="btn-projetos" target="_blank">
+                            <a href="https://gabrieldias-dev.github.io/PatinhasOnline/index.html" class="btn-projetos"
+                                target="_blank">
                                 <span>visitar site</span>
                             </a>
                             <a href="" class="btn-projetos">
@@ -168,16 +177,22 @@
                             </a>
                         </div>
                     </div>
-                    
-                </div> 
 
-                <div class="boxProjetos boxProjetoRight">
-                    
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="boxProjetos boxProjetoRight" data-aos="fade-left">
+
                     <div class="descricaoSite">
                         <h3>EasyBank</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti placeat autem suscipit ab a atque eum cum, alias facere in neque. Quia, id dolore assumenda quis consequatur illum laborum deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa iure veritatis asperiores officia quaerat minima vel sunt rerum ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus laudantium </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti placeat autem suscipit ab a
+                            atque eum cum, alias facere in neque. Quia, id dolore assumenda quis consequatur illum
+                            laborum deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa
+                            iure veritatis asperiores officia quaerat minima vel sunt rerum ut. Lorem ipsum dolor, sit
+                            amet consectetur adipisicing elit. Natus laudantium </p>
                         <div class="box-btn-projetos">
-                            <a href="https://gabrieldias-dev.github.io/PatinhasOnline/index.html" class="btn-projetos" target="_blank">
+                            <a href="https://gabrieldias-dev.github.io/PatinhasOnline/index.html" class="btn-projetos"
+                                target="_blank">
                                 <span>visitar site</span>
                             </a>
                             <a href="" class="btn-projetos">
@@ -194,8 +209,9 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="boxProjetos boxProjetoLeft">
+                 
+                <!-- Projeto 4 -->
+                <div class="boxProjetos boxProjetoLeft" data-aos="fade-right">
                     <div class="gifSite gifSiteTwo">
                         <span class="camadaSobreposta">
                             <img src="img/mouse.png" alt="">
@@ -206,13 +222,16 @@
                     </div>
                     <div class="descricaoSite">
                         <h3>Happy Bowl</h3>
-                        <p>Site desenvolvido afins de estudos a partir de um design criado pela Leticia Queiroz Carvalho. O Happy Bowlm,
+                        <p>Site desenvolvido afins de estudos a partir de um design criado pela Leticia Queiroz
+                            Carvalho. O Happy Bowlm,
                             seu paraíso culinário em Los Angeles. Tem a missão de conectar você com a pura essência da
-                            verdadeira comida nutritiva. Nossa filosofia é simples: fornecer os ingredientes mais frescos de origem
+                            verdadeira comida nutritiva. Nossa filosofia é simples: fornecer os ingredientes mais
+                            frescos de origem
                             local, cuidadosamente misturados em pratos
                             que não apenas satisfazem o seu paladar, mas também promovem o bem-estar.</p>
                         <div class="box-btn-projetos">
-                            <a href="https://gabrieldias-dev.github.io/PatinhasOnline/index.html" class="btn-projetos" target="_blank">
+                            <a href="https://gabrieldias-dev.github.io/PatinhasOnline/index.html" class="btn-projetos"
+                                target="_blank">
                                 <span>visitar site</span>
                             </a>
                             <a href="" class="btn-projetos">
@@ -220,27 +239,29 @@
                             </a>
                         </div>
                     </div>
-                    
+
                 </div>
 
 
             </div>
-        <div class="todosProjetos">
-            <button class="cta">
-                <span class="hover-underline-animation"> Ver outros projetos </span>
-                <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="40" height="20" viewBox="0 0 46 16">
-                    <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                        transform="translate(30)"></path>
-                </svg>
-            </button>
+            <div class="todosProjetos">
+                <button class="cta">
+                    <span class="hover-underline-animation"> Ver outros projetos </span>
+                    <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="40" height="20"
+                        viewBox="0 0 46 16">
+                        <path id="Path_10" data-name="Path 10"
+                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                            transform="translate(30)"></path>
+                    </svg>
+                </button>
 
-        </div>
-            
+            </div>
+
         </section>
 
-      
 
-         <section class="sectionHabiladades" id="habilidades">
+
+        <section class="sectionHabiladades" id="habilidades">
             <div class="titulo">
                 <h2>TECNOLOGIAS QUE UTILIZO NO DESENVOLVIMENTO</h2>
             </div>
@@ -254,7 +275,8 @@
                             </div>
                             <div class="content">
                                 <h3>HTML 5</h3>
-                                <p> Detenho maestria em HTML 5, a principal linguagem de marcação e que optimiza seu site nas ferramentas de buscas.
+                                <p> Detenho maestria em HTML 5, a principal linguagem de marcação e que optimiza seu
+                                    site nas ferramentas de buscas.
                                 </p>
                             </div>
                         </div>
@@ -268,7 +290,8 @@
                             </div>
                             <div class="content">
                                 <h3>CSS 3</h3>
-                                <p> Toda representação visual do seu site é feita em CSS. O CSS é uma folha de estilo criada para dar vida e estilo a sua aplicação web.</p>
+                                <p> Toda representação visual do seu site é feita em CSS. O CSS é uma folha de estilo
+                                    criada para dar vida e estilo a sua aplicação web.</p>
                             </div>
                         </div>
                     </div>
@@ -280,7 +303,8 @@
                             </div>
                             <div class="content">
                                 <h3>JavaScript</h3>
-                                <p>É uma das 3 linguagens principais para desenvolvedor web, sendo uma das mais utilizadas no mundo da programação. 
+                                <p>É uma das 3 linguagens principais para desenvolvedor web, sendo uma das mais
+                                    utilizadas no mundo da programação.
                                 </p>
                             </div>
                         </div>
@@ -293,7 +317,8 @@
                             </div>
                             <div class="content">
                                 <h3>TypeScript</h3>
-                                <p>TypeScript uma linguagem baseada no JavaScript porém com a diferença que pode adicionar uma tipagem estática.
+                                <p>TypeScript uma linguagem baseada no JavaScript porém com a diferença que pode
+                                    adicionar uma tipagem estática.
                                 </p>
                             </div>
                         </div>
@@ -306,27 +331,29 @@
                             </div>
                             <div class="content">
                                 <h3>React JS</h3>
-                                <p>O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.
+                                <p>O React é uma biblioteca front-end JavaScript de código aberto com foco em criar
+                                    interfaces de usuário em páginas web.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                     <div class="card-container">
+                    <div class="card-container">
                         <div class="card">
                             <div class="front-content">
                                 <p><img src="img/Tailwind.png" alt=""></p>
                             </div>
                             <div class="content">
                                 <h3>Tailwind</h3>
-                                <p>Tailwind CSS é um framework CSS com classes predefinidas que você pode usar para construir e
-                                projetar páginas web diretamente na sua marcação
+                                <p>Tailwind CSS é um framework CSS com classes predefinidas que você pode usar para
+                                    construir e
+                                    projetar páginas web diretamente na sua marcação
                                 </p>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
-                
+
             </div>
             <!-- <div class="titulo">
                 <h2>observe um pouco o que é desenvolver</h2>
@@ -354,7 +381,7 @@
                 </div>
             </div>
              -->
-        </section>   
+        </section>
     </main>
     <footer>
         <div class="contatosFooter">
@@ -372,13 +399,17 @@
 
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="particles.min.js"></script>
-    <script src="videoProjetos.js"></script> 
-    <script src="copiarEmail.js"></script> 
-     <script src="ControleMenuNavegacao.js"></script> 
+    <script src="videoProjetos.js"></script>
+    <script src="copiarEmail.js"></script>
+    <script src="ControleMenuNavegacao.js"></script>
 
-     <script>
-        particlesJS (
+    <script>
+
+        AOS.init();
+
+        particlesJS(
             {
                 "particles": {
                     "number": {
@@ -407,7 +438,7 @@
                         }
                     },
                     "opacity": {
-                        "value": 0.03,
+                        "value": 0.02,
                         "random": false,
                         "anim": {
                             "enable": false,
@@ -490,9 +521,9 @@
                 "retina_detect": true
             }
         )
-     </script>
-    
-    
+    </script>
+
+
 </body>
 
 </html>
