@@ -127,7 +127,7 @@ body {
   max-width: 100vw;
   position: relative;
   min-height: 100vh;
-  background-image: url(img/bg11.jpg);
+  background-image: url(assets/backgroundSite.jpg);
   background-size: cover;
   backdrop-filter: blur(6px);
   background-attachment: fixed;
