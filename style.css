@@ -389,25 +389,15 @@ h1 {
 }
 
 .container-sobre {
-  display: flex;
-  justify-content: left;
   width: 100%;
-  padding: 1rem 10rem;
-  margin: 1rem 0;
+  display: flex;
+  border: 1px solid rgb(236, 232, 232);
 }
 
-.boxOne {
-  justify-content: left;
-}
 
-.boxTwo {
-  justify-content: right;
-  transform: translateY(-30rem);
-  z-index: -1;
-}
 
 .info-pessoais {
-  width: 45%;
+  width: 55rem;
   height: auto;
   background-color: rgba(0, 0, 0, 0.764);
   padding: 4rem;
@@ -416,9 +406,6 @@ h1 {
   box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.658);
 }
 
-.infoBoxTwo {
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.658);
-}
 
 .info-pessoais h3 {
   display: block;
