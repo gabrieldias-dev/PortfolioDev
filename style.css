@@ -144,7 +144,15 @@ body {
 }
 
 section {
+  display: flex;
+  justify-content: center;
   padding: 5rem;
+}
+
+.alinhamentoGeral {
+  display: flex;
+  justify-content: center;
+  width: min(144rem, 100%); 
 }
 
 main {
@@ -159,6 +167,13 @@ header {
   z-index: 100;
   height: 7.5rem;
   padding: 0 3rem;
+  display: flex;
+  justify-content: end;
+}
+
+header .alinhamentoGeral {
+  justify-content: right;
+  
 }
 
 header.rolagem {
@@ -224,12 +239,10 @@ nav > a.ativo::before {
 /* --------------------- Section Inicio ---------------- */
 
 .sectionInicio {
-  width: 100vw;
+  width: 100vw; 
   height: calc(100vh - var(--nav-height));
-  display: flex;
-  padding: 5rem;
-  justify-content: center;
   align-items: center;
+  padding-top: 9rem;
 }
 
 .topo-apresentacao {
@@ -275,7 +288,7 @@ nav > a.ativo::before {
 
 .meu-nome {
   display: block;
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding-left: 0.3rem;
 }
 
@@ -288,10 +301,10 @@ h4 {
 
 h1 {
   font-family: "Cabin", sans-serif;
-  font-size: 9rem;
+  font-size: 8rem;
   text-transform: uppercase;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.423);
-  padding: 0;
+  padding: 0 5rem 0 0;
 }
 
 #info-container {
@@ -364,20 +377,24 @@ h1 {
 /* --------------- Section Sobre --------------- */
 
 .sectionSobre {
-  width: 100vw;
+  width: 100vw; 
   min-height: 100vh;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  padding: 1rem 5rem;
   padding-top: calc(5rem + var(--nav-height));
+  
+}
+
+.sectionSobre .alinhamentoGeral {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .titulo {
   width: 100%;
   font-size: 3.5rem;
-  margin: 5rem 0 10rem 0;
+  margin: 5rem 0 15rem 0;
   display: flex;
   justify-content: center;
   font-family: "Cabin", sans-serif;
@@ -451,25 +468,27 @@ h1 {
 /* --------------- Section Projeto --------------- */
 
 .sectionProjetos {
-  width: 100vw;
+  width: 100vw; 
   height: auto;
   display: flex;
-  padding: 1rem 5rem;
   padding-top: calc(1rem + var(--nav-height));
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.sectionProjetos .titulo {
-  margin-bottom: 10rem;
-  justify-content: center;
+.sectionProjetos .alinhamentoGeral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+
 }
+
 
 .containerProjetos {
   width: 100%;
   height: auto;
-  padding: 1rem 10rem;
   display: flex;
   flex-direction: column;
   gap: 10rem;
@@ -514,7 +533,7 @@ h1 {
   transition: all 1s;
 }
 
-.camadaSobreposta img {
+ .camadaSobreposta img {
   filter: invert(1);
   animation: mouse 1.5s linear infinite alternate;
 }
@@ -688,19 +707,13 @@ h1 {
   width: 100vw;
   min-height: 100vh;
   display: flex;
-  padding: 1rem 5rem;
   padding-top: calc(1rem + var(--nav-height));
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.sectionHabiladades .titulo {
-  font-size: 3.2rem;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 10rem;
-}
+
 
 .sectionHabiladades .titulo h3 {
   text-transform: initial;
@@ -710,7 +723,6 @@ h1 {
 
 .box-habilidades {
   width: 100%;
-  margin-top: 5rem;
   padding: 3rem;
 }
 
