@@ -20,35 +20,7 @@
 
 /* Todas animações de keyframe do site */
 
-@keyframes xiado {
-  0% {
-    opacity: 100%;
-  }
-  38% {
-    opacity: 100%;
-  }
-  40% {
-    opacity: 60%;
-  }
-  42% {
-    opacity: 100%;
-  }
-  44% {
-    opacity: 60%;
-  }
-  46% {
-    opacity: 100%;
-  }
-  48% {
-    opacity: 60%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
+
 
 @keyframes entradaAviao {
   0% {
@@ -68,24 +40,6 @@
   }
   100% {
     transform: translateY(0);
-  }
-}
-
-@keyframes cubo {
-  0% {
-    transform: rotateX(-30deg) rotateY(0);
-  }
-  100% {
-    transform: rotateX(-30deg) rotateY(360deg);
-  }
-}
-
-@keyframes InOut {
-  0% {
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    transform: translateX(-3rem) translateY(-4rem);
   }
 }
 
@@ -146,7 +100,7 @@ body {
 section {
   display: flex;
   justify-content: center;
-  padding: 5rem;
+  padding: 10rem 5rem;
 }
 
 .alinhamentoGeral {
@@ -637,7 +591,7 @@ h1 {
 }
 
 .todosProjetos {
-  margin: 10rem 0;
+  margin: 20rem 0 0 0;
   transition: transform 0.2s;
 }
 
