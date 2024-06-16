@@ -769,6 +769,12 @@ h1 {
   align-items: center;
 }
 
+.sectionServico .titulo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .box-cards-servico {
   width: 100%;
   display: flex;
