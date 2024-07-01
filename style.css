@@ -20,8 +20,6 @@
 
 /* Todas animações de keyframe do site */
 
-
-
 @keyframes entradaAviao {
   0% {
     transform: translateX(400px) translateY(100px);
@@ -89,7 +87,7 @@ body {
 }
 
 #particles-js {
-  position: absolute; 
+  position: absolute;
   width: 100vw;
   height: calc(100% - 2rem);
   top: 0;
@@ -106,7 +104,7 @@ section {
 .alinhamentoGeral {
   display: flex;
   justify-content: center;
-  width: min(144rem, 100%); 
+  width: min(144rem, 100%);
 }
 
 main {
@@ -127,7 +125,6 @@ header {
 
 header .alinhamentoGeral {
   justify-content: right;
-  
 }
 
 header.rolagem {
@@ -193,7 +190,7 @@ nav > a.ativo::before {
 /* --------------------- Section Inicio ---------------- */
 
 .sectionInicio {
-  width: 100vw; 
+  width: 100vw;
   height: calc(100vh - var(--nav-height));
   align-items: center;
   padding-top: 9rem;
@@ -285,7 +282,6 @@ h1 {
   margin-top: 2em;
   display: flex;
   gap: 1rem;
-  
 }
 
 .ende-email {
@@ -327,22 +323,19 @@ h1 {
   box-shadow: 2px 2px 5px rgb(1, 1, 2);
 }
 
-
 /* --------------- Section Sobre --------------- */
 
 .sectionSobre {
-  width: 100vw; 
+  width: 100vw;
   min-height: 100vh;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding-top: calc(5rem + var(--nav-height));
-  
 }
 
 .sectionSobre .alinhamentoGeral {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .titulo {
@@ -362,17 +355,12 @@ h1 {
   padding: 2rem 0;
   display: flex;
   justify-content: space-evenly;
-  
 }
-
-
 
 .boxs-infos:nth-child(2) {
   display: flex;
   align-items: end;
 }
-
-
 
 .info-pessoais {
   width: 55rem;
@@ -383,7 +371,6 @@ h1 {
   border: 2px solid white;
   box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.658);
 }
-
 
 .info-pessoais h3 {
   display: block;
@@ -407,7 +394,7 @@ h1 {
   display: flex;
   justify-content: center;
   filter: invert(1);
-   gap: 10rem; 
+  gap: 10rem;
 }
 
 .box-iconesSociais img {
@@ -422,7 +409,7 @@ h1 {
 /* --------------- Section Projeto --------------- */
 
 .sectionProjetos {
-  width: 100vw; 
+  width: 100vw;
   height: auto;
   display: flex;
   padding-top: calc(1rem + var(--nav-height));
@@ -436,48 +423,47 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding: 0;
-
 }
 
 .containerProjetos {
   width: 100%;
   height: 50rem;
-
 }
 
 .swiper {
-      width: 100%;
-      height: 100%;
-    }
+  width: 100%;
+  height: 100%;
+}
 
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-    }
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
 
-    .swiper-slide img {
+/* .swiper-slide img {
       display: block;
-      width: 100%;
+      width: 10%;
       object-fit: cover;
-    }
-
-
-
+    }  */
 
 .boxProjetos {
-  width: 100%;
+  width: auto;
   height: 40rem;
   display: flex;
+  justify-content: center;
 
-  border-radius: 1.5rem;
+  border-radius: 1.5rem 0;
   overflow: hidden;
-
+  
+  
 }
 
 .gifSite {
   position: relative;
   width: 60rem;
   height: 40rem;
+  border-radius: 0 1.5rem 1.5rem 0;
+  overflow: hidden;
 }
 
 .gifProjeto {
@@ -501,9 +487,11 @@ h1 {
   align-items: center;
   opacity: 100%;
   transition: all 1s;
+  overflow: hidden;
+  
 }
 
- .camadaSobreposta img {
+.camadaSobreposta img {
   filter: invert(1);
   animation: mouse 1.5s linear infinite alternate;
 }
@@ -514,34 +502,29 @@ h1 {
 
 .descricaoSite {
   width: 40rem;
-  background-color: rgba(0, 0, 0, 0.764);
+  background-color: rgb(0, 0, 0);
   height: 100%;
   padding: 3rem 3rem;
-  border-radius: 0 1.5rem 1.5rem 0;
+  border-radius: 1.5rem 0 0 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+  overflow: hidden;
 }
 
 .descricaoSite h3 {
-   font-size: 2.3rem;
-  
+  font-size: 2.3rem;
 }
 
 .descricaoSite p {
-   font-size: 1.7rem;
-   
-} 
-
-
+  font-size: 1.7rem;
+}
 
 .box-btn-projetos {
   display: flex;
   justify-content: left;
   padding: 1rem 0;
   gap: 3rem;
- 
 }
 
 .btn-projetos {
@@ -599,7 +582,7 @@ h1 {
 }
 
 .boxProjetoRight {
-  justify-content: right;
+  justify-content: center;
 }
 
 .boxProjetoRight .descricaoSite {
@@ -611,7 +594,6 @@ h1 {
   transition: transform 0.2s;
 }
 
-
 .cta {
   border: none;
   background: none;
@@ -619,8 +601,8 @@ h1 {
 }
 
 .cta span {
-  padding-bottom: .7rem;
-  letter-spacing: .4rem;
+  padding-bottom: 0.7rem;
+  letter-spacing: 0.4rem;
   font-size: 2rem;
   padding-right: 1.5rem;
   text-transform: uppercase;
@@ -670,7 +652,6 @@ h1 {
   text-decoration: underline;
 }
 
-
 /* --------------- Section Habilidades --------------- */
 
 .sectionHabiladades {
@@ -682,8 +663,6 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-
-
 
 .sectionHabiladades .titulo h3 {
   text-transform: initial;
@@ -794,7 +773,7 @@ h1 {
 .box-cards-servico {
   width: 100%;
   display: flex;
- 
+
   justify-content: space-between;
 }
 
@@ -805,7 +784,6 @@ h1 {
   border-radius: 1rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.766);
   padding: 2rem;
-
 }
 
 /* --------------- Footer ---------------- */
@@ -813,7 +791,7 @@ h1 {
 footer {
   width: 100%;
   background-color: #1f2426;
-  padding: 3rem; 
+  padding: 3rem;
   height: auto;
 }
 
@@ -826,18 +804,14 @@ footer {
   background-color: #1f2426;
 }
 
-
-
 .contatosFooter a img {
   width: 4rem;
   filter: invert(1);
-  transition: transform .3s;
-  
+  transition: transform 0.3s;
 }
 
 .contatosFooter a img:hover {
   transform: scale(1.1);
-  
 }
 
 .creditos-copywriting {
@@ -860,5 +834,4 @@ footer {
 
 .creditos-copywriting a:hover {
   text-decoration: underline;
-  
 }
