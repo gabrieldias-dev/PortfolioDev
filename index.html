@@ -7,6 +7,7 @@
     <title>PortfolioDias</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/icons/iconFavicon.png" type="image/x-icon">
 
@@ -129,9 +130,29 @@
                 <div class="titulo titulo2" data-aos="flip-up">
                     <h2>ALGUNS De MEUS PROJETOS</h2>
                 </div>
-                <div class="containerProjetos">
-                    <!-- Projeto 1 -->
-                    <!-- Imagens e Gif por 1400 x 800 -->
+                
+                 <div class="containerProjetos">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- Projeto 1 
+                     Imagens e Gif por 1400 x 800 
                     <div class="boxProjetos boxProjetoRight" data-aos="fade-left" data-aos-duration="2000">
                         <div class="descricaoSite">
                             <h3>Patinhas Online - ONG</h3>
@@ -217,7 +238,7 @@
                                 <img id="siteEasy" src="assets/imagensProjetos/siteEaysBank.png" alt="">
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
                 </div>
                 <div class="todosProjetos">
@@ -412,6 +433,7 @@
     <script src="scripts/videoProjetos.js"></script>
     <script src="scripts/copiarEmail.js"></script>
     <script src="scripts/ControleMenuNavegacao.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 
 
