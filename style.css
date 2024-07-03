@@ -16,6 +16,9 @@
 :root {
   font-size: 62.5%;
   --nav-height: 7.2rem;
+  --swiper-theme-color: white;
+  --swiper-pagination-color: white;
+  --swiper-pagination-bullet-inactive-color: rgb(255, 255, 255);
 }
 
 /* Todas animações de keyframe do site */
@@ -446,6 +449,10 @@ h1 {
       object-fit: cover;
     }  */
 
+   .swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+}
 .boxProjetos {
   width: auto;
   height: 40rem;
